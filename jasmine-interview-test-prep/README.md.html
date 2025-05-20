@@ -1,0 +1,351 @@
+<style>pre {background-color:aqua;}</style>
+<h1 id="intro-to-jasmine-code-challenges" class="code-line code-active-line" data-line="0">Intro to Jasmine Code Challenges</h1>
+<p class="code-line" data-line="2">Your assignment is to write the following functions, in ECMAScript 6 (aka ES6) Arrow Function format, using the descriptions below. When defining your functions, you cannot use built-in JavaScript Array Iterators.</p>
+<p class="code-line" data-line="4">Good luck!</p>
+<h3 id="appendtostring" class="code-line" data-line="6">appendToString</h3>
+<p class="code-line" data-line="8">The function should return a new string which consists of the second string appended to the first string.</p>
+<p class="code-line" data-line="10">Examples:</p>
+<pre><code class="code-line language-js" data-line="12"><span class="hljs-title function_">appendToString</span>(<span class="hljs-string">'Hello'</span>, <span class="hljs-string">' World!'</span>); <span class="hljs-comment">// "Hello World!"</span>
+<span class="hljs-title function_">appendToString</span>(<span class="hljs-string">'Foo'</span>, <span class="hljs-string">'bar'</span>); <span class="hljs-comment">// "Foobar"</span>
+<span class="hljs-title function_">appendToString</span>(<span class="hljs-string">'bar'</span>, <span class="hljs-string">'Foo'</span>); <span class="hljs-comment">// "barFoo"</span>
+<span class="hljs-title function_">appendToString</span>(<span class="hljs-string">''</span>, <span class="hljs-string">'test'</span>); <span class="hljs-comment">// "test"</span>
+<span class="hljs-title function_">appendToString</span>(<span class="hljs-string">'other test'</span>, <span class="hljs-string">''</span>); <span class="hljs-comment">// "other test"</span>
+</code></pre>
+<h3 id="charat" class="code-line" data-line="20">charAt</h3>
+<p class="code-line" data-line="22">Write a function called<span>&nbsp;</span><strong>charAt</strong><span>&nbsp;</span>which accepts a string and an index (number) and returns the character at that index.</p>
+<p class="code-line" data-line="24">The function should return an empty string if the number is greater than the length of the string.</p>
+<p class="code-line" data-line="26"><strong>Do not use the built in charAt method</strong></p>
+<p class="code-line" data-line="28">Examples:</p>
+<pre><code class="code-line language-js" data-line="30"><span class="hljs-title function_">charAt</span>(<span class="hljs-string">'awesome'</span>, <span class="hljs-number">2</span>); <span class="hljs-comment">// 'e'</span>
+<span class="hljs-title function_">charAt</span>(<span class="hljs-string">'awesome'</span>, <span class="hljs-number">12</span>); <span class="hljs-comment">// ''</span>
+</code></pre>
+<h3 id="countnumbers" class="code-line" data-line="35">countNumbers</h3>
+<p class="code-line" data-line="37">Write a function called<span>&nbsp;</span><strong>countNumbers</strong>, which accepts an array of strings. The function should return a count of the number of strings in the array that can be successfully converted into a number. For example, the string "1" can be successfully converted to the number 1, but the string "hello" cannot be converted into a number.</p>
+<p class="code-line" data-line="39">Examples:</p>
+<pre><code class="code-line language-js" data-line="41"><span class="hljs-title function_">countNumbers</span>([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'3'</span>, <span class="hljs-string">'awesome'</span>, <span class="hljs-string">'4'</span>]); <span class="hljs-comment">// 2</span>
+<span class="hljs-title function_">countNumbers</span>([<span class="hljs-string">'32'</span>, <span class="hljs-string">'55'</span>, <span class="hljs-string">'awesome'</span>, <span class="hljs-string">'test'</span>, <span class="hljs-string">'100'</span>]); <span class="hljs-comment">// 3</span>
+<span class="hljs-title function_">countNumbers</span>(<span class="hljs-string">'[]'</span>); <span class="hljs-comment">// 0</span>
+<span class="hljs-title function_">countNumbers</span>([<span class="hljs-string">'4'</span>, <span class="hljs-string">'1'</span>, <span class="hljs-string">'0'</span>, <span class="hljs-string">'NaN'</span>]); <span class="hljs-comment">// 3</span>
+<span class="hljs-title function_">countNumbers</span>([<span class="hljs-string">'7'</span>, <span class="hljs-string">'12'</span>, <span class="hljs-string">'a'</span>, <span class="hljs-string">''</span>, <span class="hljs-string">'6'</span>, <span class="hljs-string">'8'</span>, <span class="hljs-string">' '</span>]); <span class="hljs-comment">// 4</span>
+</code></pre>
+<h3 id="countvalues" class="code-line" data-line="49">countValues</h3>
+<p class="code-line" data-line="51">Write a function called<span>&nbsp;</span><strong>countValues</strong><span>&nbsp;</span>which accepts an array and a number and returns the number of times that value appears in the array.</p>
+<p class="code-line" data-line="53">Examples:</p>
+<pre><code class="code-line language-js" data-line="55"><span class="hljs-title function_">countValues</span>([<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">4</span>], <span class="hljs-number">4</span>); <span class="hljs-comment">// 4</span>
+<span class="hljs-title function_">countValues</span>([<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">4</span>], <span class="hljs-number">100</span>); <span class="hljs-comment">// 0</span>
+<span class="hljs-title function_">countValues</span>([], <span class="hljs-number">1</span>); <span class="hljs-comment">// 0</span>
+</code></pre>
+<h3 id="entries" class="code-line" data-line="61">entries</h3>
+<p class="code-line" data-line="63">Write a function called<span>&nbsp;</span><strong>entries,</strong><span>&nbsp;</span>which accepts an object and returns an array of arrays of key-value pairs.</p>
+<p class="code-line" data-line="65">In other words, each sub-array is an "entry" in the object with two elements: the first element is the key, and the second element is the value.</p>
+<p class="code-line" data-line="67">Do not use the built in<span>&nbsp;</span><code>Object.entries()</code><span>&nbsp;</span>function!</p>
+<p class="code-line" data-line="69">Examples:</p>
+<pre><code class="code-line language-js" data-line="71"><span class="hljs-keyword">let</span> obj = { <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">c</span>: <span class="hljs-number">3</span> };
+<span class="hljs-title function_">entries</span>(obj);
+<span class="hljs-comment">// [["a",1], ["b",2], ["c",3]]</span>
+
+<span class="hljs-keyword">let</span> obj2 = { <span class="hljs-attr">first</span>: <span class="hljs-string">'Matt'</span>, <span class="hljs-attr">last</span>: <span class="hljs-string">'Lane'</span>, <span class="hljs-attr">isDogOwner</span>: <span class="hljs-literal">true</span> };
+<span class="hljs-title function_">entries</span>(obj2);
+<span class="hljs-comment">// [["first","Matt"], ["last","Lane"], ["isDogOwner",true]]</span>
+
+<span class="hljs-keyword">let</span> obj3 = {};
+<span class="hljs-title function_">entries</span>(obj3); <span class="hljs-comment">// []</span>
+</code></pre>
+<h3 id="findtheduplicate" class="code-line" data-line="84">findTheDuplicate</h3>
+<p class="code-line" data-line="86">Write a function called<span>&nbsp;</span><strong>findTheDuplicate</strong><span>&nbsp;</span>which accepts an array of numbers containing a single duplicate. The function returns the number which is a duplicate or undefined if there are no duplicates.</p>
+<p class="code-line" data-line="88">Examples:</p>
+<pre><code class="code-line language-js" data-line="90"><span class="hljs-title function_">findTheDuplicate</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">12</span>]); <span class="hljs-comment">// 1</span>
+<span class="hljs-title function_">findTheDuplicate</span>([<span class="hljs-number">6</span>, <span class="hljs-number">1</span>, <span class="hljs-number">9</span>, <span class="hljs-number">5</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">9</span>]); <span class="hljs-comment">// 9</span>
+<span class="hljs-title function_">findTheDuplicate</span>([<span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]); <span class="hljs-comment">// undefined</span>
+</code></pre>
+<h3 id="helloworld" class="code-line" data-line="96">helloWorld</h3>
+<p class="code-line" data-line="98">Write a function called<span>&nbsp;</span><strong>helloWorld</strong><span>&nbsp;</span>which returns a string of "hello world".</p>
+<p class="code-line" data-line="100">Example:</p>
+<pre><code class="code-line language-js" data-line="102"><span class="hljs-title function_">helloWorld</span>(); <span class="hljs-comment">// 'hello world'</span>
+</code></pre>
+<h3 id="includes" class="code-line" data-line="106">includes</h3>
+<p class="code-line" data-line="108">Write a function called<span>&nbsp;</span><strong><code>includes</code></strong><span>&nbsp;</span>which accepts a<span>&nbsp;</span><code>collection</code>, a<span>&nbsp;</span><code>value</code>, and an optional starting<span>&nbsp;</span><code>index</code>. The function should return<span>&nbsp;</span><code>true</code><span>&nbsp;</span>if the<span>&nbsp;</span><code>value</code><span>&nbsp;</span>exists in the collection when we search starting from the starting<span>&nbsp;</span><code>index</code>. Otherwise, it should return<span>&nbsp;</span><code>false</code>.</p>
+<p class="code-line" data-line="110">The collection can be a string, an array, or an object. If the collection is a string or array, the third parameter is a starting index for where to search from. If the collection is an object, the function searches for the value among values in the object; since objects have no sort order, the third parameter is ignored.</p>
+<p class="code-line" data-line="112">Examples:</p>
+<pre><code class="code-line language-js" data-line="114"><span class="hljs-title function_">includes</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], <span class="hljs-number">1</span>); <span class="hljs-comment">// true</span>
+<span class="hljs-title function_">includes</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], <span class="hljs-number">1</span>, <span class="hljs-number">2</span>); <span class="hljs-comment">// false</span>
+<span class="hljs-title function_">includes</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], <span class="hljs-number">6</span>); <span class="hljs-comment">// false</span>
+
+<span class="hljs-title function_">includes</span>({ <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">2</span> }, <span class="hljs-number">1</span>); <span class="hljs-comment">// true</span>
+<span class="hljs-title function_">includes</span>({ <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">2</span> }, <span class="hljs-string">'a'</span>); <span class="hljs-comment">// false</span>
+
+<span class="hljs-title function_">includes</span>(<span class="hljs-string">'abcd'</span>, <span class="hljs-string">'b'</span>); <span class="hljs-comment">// true</span>
+<span class="hljs-title function_">includes</span>(<span class="hljs-string">'abcd'</span>, <span class="hljs-string">'e'</span>); <span class="hljs-comment">// false</span>
+<span class="hljs-title function_">includes</span>(<span class="hljs-string">'abcd'</span>, <span class="hljs-string">'a'</span>, <span class="hljs-number">2</span>); <span class="hljs-comment">// false</span>
+</code></pre>
+<h3 id="indexof" class="code-line" data-line="127">indexOf</h3>
+<p class="code-line" data-line="129">Write a function called<span>&nbsp;</span><strong>indexOf,</strong><span>&nbsp;</span>which accepts an array and a number.</p>
+<p class="code-line" data-line="131">The function should return the first index at which the value exists or<span>&nbsp;</span><code>-1</code><span>&nbsp;</span>if the value is not found.</p>
+<p class="code-line" data-line="133">Do not use the built in<span>&nbsp;</span><code>Array.indexOf()</code><span>&nbsp;</span>function!</p>
+<p class="code-line" data-line="135">Examples:</p>
+<pre><code class="code-line language-js" data-line="137"><span class="hljs-keyword">let</span> arr = [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>, <span class="hljs-number">15</span>, <span class="hljs-number">20</span>];
+<span class="hljs-title function_">indexOf</span>(arr, <span class="hljs-number">20</span>); <span class="hljs-comment">// 3</span>
+
+<span class="hljs-keyword">let</span> arr2 = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
+<span class="hljs-title function_">indexOf</span>(arr2, <span class="hljs-number">2</span>); <span class="hljs-comment">// 1</span>
+
+<span class="hljs-keyword">let</span> arr3 = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>];
+<span class="hljs-title function_">indexOf</span>(arr3, <span class="hljs-number">10</span>); <span class="hljs-comment">// -1</span>
+</code></pre>
+<h3 id="isalt" class="code-line" data-line="148">isAlt</h3>
+<p class="code-line" data-line="150">Create a function<span>&nbsp;</span><code>isAlt</code><span>&nbsp;</span>that accepts a string as an argument and validates whether the vowels (a, e, i, o, u) and consonants are in alternate order.</p>
+<p class="code-line" data-line="152">Examples:</p>
+<pre><code class="code-line language-js" data-line="154"><span class="hljs-title function_">isAlt</span>(<span class="hljs-string">'amazon'</span>); <span class="hljs-comment">// true</span>
+<span class="hljs-title function_">isAlt</span>(<span class="hljs-string">'apple'</span>); <span class="hljs-comment">// false</span>
+<span class="hljs-title function_">isAlt</span>(<span class="hljs-string">'banana'</span>); <span class="hljs-comment">// true</span>
+</code></pre>
+<h3 id="keys" class="code-line" data-line="160">keys</h3>
+<p class="code-line" data-line="162">Write a function called<span>&nbsp;</span><strong>keys,</strong><span>&nbsp;</span>which accepts an object and returns an array of all of the keys in the object.</p>
+<p class="code-line" data-line="164">Do not use the built in<span>&nbsp;</span><code>Object.keys()</code><span>&nbsp;</span>function!</p>
+<p class="code-line" data-line="166">Examples:</p>
+<pre><code class="code-line language-js" data-line="168"><span class="hljs-keyword">let</span> obj = { <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">c</span>: <span class="hljs-number">3</span> };
+<span class="hljs-title function_">keys</span>(obj); <span class="hljs-comment">// ["a", "b", "c"]</span>
+
+<span class="hljs-keyword">let</span> obj2 = { <span class="hljs-attr">first</span>: <span class="hljs-string">'Matt'</span>, <span class="hljs-attr">last</span>: <span class="hljs-string">'Lane'</span> };
+<span class="hljs-title function_">keys</span>(obj2); <span class="hljs-comment">// ["first", "last"]</span>
+
+<span class="hljs-keyword">let</span> obj3 = {};
+<span class="hljs-title function_">keys</span>(obj3); <span class="hljs-comment">// []</span>
+</code></pre>
+<h3 id="lastindexof" class="code-line" data-line="179">lastIndexOf</h3>
+<p class="code-line" data-line="181">Write a function called<span>&nbsp;</span><strong>lastIndexOf,</strong><span>&nbsp;</span>which accepts an array and a number.</p>
+<p class="code-line" data-line="183">The function should return the last index at which the value exists, or<span>&nbsp;</span><code>-1</code><span>&nbsp;</span>if the value is not found.</p>
+<p class="code-line" data-line="185">Do not use the built in<span>&nbsp;</span><code>Array.lastIndexOf()</code><span>&nbsp;</span>function!</p>
+<p class="code-line" data-line="187">Examples:</p>
+<pre><code class="code-line language-js" data-line="189"><span class="hljs-title function_">lastIndexOf</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>], <span class="hljs-number">2</span>); <span class="hljs-comment">// 1</span>
+<span class="hljs-title function_">lastIndexOf</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">2</span>], <span class="hljs-number">2</span>); <span class="hljs-comment">// 4</span>
+<span class="hljs-title function_">lastIndexOf</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>], <span class="hljs-number">22</span>); <span class="hljs-comment">// -1</span>
+</code></pre>
+<h3 id="max" class="code-line" data-line="195">max</h3>
+<p class="code-line" data-line="197">Write a function called<span>&nbsp;</span><strong>max,</strong><span>&nbsp;</span>which accepts an array and returns the highest value.</p>
+<p class="code-line" data-line="199">Do not use the built-in<span>&nbsp;</span><code>Math.max()</code><span>&nbsp;</span>function!</p>
+<p class="code-line" data-line="201">Examples:</p>
+<pre><code class="code-line language-js" data-line="203"><span class="hljs-title function_">max</span>([<span class="hljs-number">5</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">7</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>]); <span class="hljs-comment">// 7</span>
+<span class="hljs-title function_">max</span>([<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">12</span>, <span class="hljs-number">1</span>, <span class="hljs-number">8</span>]); <span class="hljs-comment">// 12</span>
+<span class="hljs-title function_">max</span>([-<span class="hljs-number">1</span>, <span class="hljs-number">6</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2.2</span>, -<span class="hljs-number">10</span>, -<span class="hljs-number">4</span>]); <span class="hljs-comment">// 6</span>
+</code></pre>
+<h3 id="min" class="code-line" data-line="209">min</h3>
+<p class="code-line" data-line="211">Write a function called<span>&nbsp;</span><strong>min,</strong><span>&nbsp;</span>which accepts an array of numbers and returns the lowest value.</p>
+<p class="code-line" data-line="213">Do note use the built-in<span>&nbsp;</span><code>Math.min()</code><span>&nbsp;</span>function!</p>
+<p class="code-line" data-line="215">Examples:</p>
+<pre><code class="code-line language-js" data-line="217"><span class="hljs-title function_">min</span>([<span class="hljs-number">5</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">7</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>]); <span class="hljs-comment">// 1</span>
+<span class="hljs-title function_">min</span>([-<span class="hljs-number">1</span>, <span class="hljs-number">6</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2.2</span>, -<span class="hljs-number">10</span>, -<span class="hljs-number">4</span>]); <span class="hljs-comment">// -10</span>
+</code></pre>
+<h3 id="minmaxkeyinobject" class="code-line" data-line="222">minMaxKeyInObject</h3>
+<p class="code-line" data-line="224">Write a function called<span>&nbsp;</span><strong>minMaxKeyInObject</strong><span>&nbsp;</span>that accepts an object with numeric keys.*</p>
+<p class="code-line" data-line="226">The function should return an array with the following format:<span>&nbsp;</span><code>[lowestKey, highestKey]</code></p>
+<p class="code-line" data-line="228">Examples:</p>
+<pre><code class="code-line language-js" data-line="230"><span class="hljs-title function_">minMaxKeyInObject</span>({ <span class="hljs-number">2</span>: <span class="hljs-string">'a'</span>, <span class="hljs-number">7</span>: <span class="hljs-string">'b'</span>, <span class="hljs-number">1</span>: <span class="hljs-string">'c'</span>, <span class="hljs-number">10</span>: <span class="hljs-string">'d'</span>, <span class="hljs-number">4</span>: <span class="hljs-string">'e'</span> });
+<span class="hljs-comment">// [1, 10]</span>
+<span class="hljs-title function_">minMaxKeyInObject</span>({ <span class="hljs-number">1</span>: <span class="hljs-string">'Elie'</span>, <span class="hljs-number">4</span>: <span class="hljs-string">'Matt'</span>, <span class="hljs-number">2</span>: <span class="hljs-string">'Tim'</span> });
+<span class="hljs-comment">// [1, 4]</span>
+</code></pre>
+<h3 id="multiples" class="code-line" data-line="237">multiples</h3>
+<p class="code-line" data-line="239">Implement a function called<span>&nbsp;</span><strong>multiples</strong><span>&nbsp;</span>that accepts two numbers:<span>&nbsp;</span><strong><em>x</em></strong><span>&nbsp;</span>and<span>&nbsp;</span><strong><em>n</em></strong>.</p>
+<p class="code-line" data-line="241">The function should return the first<span>&nbsp;</span><strong><em>n</em></strong><span>&nbsp;</span>multiples of the number<span>&nbsp;</span><strong><em>x</em></strong>.</p>
+<p class="code-line" data-line="243">Assume that<span>&nbsp;</span><strong><em>x</em></strong><span>&nbsp;</span>is a positive integer.</p>
+<p class="code-line" data-line="245">Examples:</p>
+<pre><code class="code-line language-js" data-line="247"><span class="hljs-title function_">multiples</span>(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>); <span class="hljs-comment">// [3, 6, 9, 12]</span>
+<span class="hljs-title function_">multiples</span>(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>); <span class="hljs-comment">// [2, 4, 6, 8, 10]</span>
+</code></pre>
+<h3 id="pluck" class="code-line" data-line="252">pluck</h3>
+<p class="code-line" data-line="254">Write a function called<span>&nbsp;</span><strong>pluck</strong>, which takes an array of objects and the name of a key.</p>
+<p class="code-line" data-line="256">The function should return an array containing the value associated with that key for each object, or undefined if that key is not present in the object.</p>
+<p class="code-line" data-line="258">Examples:</p>
+<pre><code class="code-line language-js" data-line="260"><span class="hljs-title function_">pluck</span>([{ <span class="hljs-attr">name</span>: <span class="hljs-string">'Tim'</span> }, { <span class="hljs-attr">name</span>: <span class="hljs-string">'Matt'</span> }, { <span class="hljs-attr">name</span>: <span class="hljs-string">'Elie'</span> }], <span class="hljs-string">'name'</span>);
+<span class="hljs-comment">// ["Tim", "Matt", "Elie"]</span>
+
+<span class="hljs-title function_">pluck</span>(
+  [
+    { <span class="hljs-attr">name</span>: <span class="hljs-string">'Tim'</span>, <span class="hljs-attr">isBoatOwner</span>: <span class="hljs-literal">true</span> },
+    { <span class="hljs-attr">name</span>: <span class="hljs-string">'Matt'</span>, <span class="hljs-attr">isBoatOwner</span>: <span class="hljs-literal">false</span> },
+    { <span class="hljs-attr">name</span>: <span class="hljs-string">'Elie'</span> },
+  ],
+  <span class="hljs-string">'isBoatOwner'</span>
+);
+<span class="hljs-comment">// [true, false, undefined]</span>
+</code></pre>
+<h3 id="prependtostring" class="code-line" data-line="275">prependToString</h3>
+<p class="code-line" data-line="277">Write a function called<span>&nbsp;</span><strong>prependToString,</strong><span>&nbsp;</span>which accepts two strings.</p>
+<p class="code-line" data-line="279">The function should return a new string with the second string prepended to the first string.</p>
+<p class="code-line" data-line="281">Examples:</p>
+<pre><code class="code-line language-js" data-line="283"><span class="hljs-title function_">prependToString</span>(<span class="hljs-string">'awesome'</span>, <span class="hljs-string">'very'</span>); <span class="hljs-comment">// 'veryawesome'</span>
+<span class="hljs-title function_">prependToString</span>(<span class="hljs-string">'world'</span>, <span class="hljs-string">'hello '</span>); <span class="hljs-comment">// 'hello world'</span>
+<span class="hljs-title function_">prependToString</span>(<span class="hljs-string">'nothing'</span>, <span class="hljs-string">''</span>); <span class="hljs-comment">// 'nothing'</span>
+</code></pre>
+<h3 id="removefromstring" class="code-line" data-line="289">removeFromString</h3>
+<p class="code-line" data-line="291">Write a function called<span>&nbsp;</span><strong>removeFromString,</strong><span>&nbsp;</span>which accepts a string, a starting index (number) and a number of characters to remove.</p>
+<p class="code-line" data-line="293">The function should return a new string with the characters removed.</p>
+<p class="code-line" data-line="295">Examples:</p>
+<pre><code class="code-line language-js" data-line="297"><span class="hljs-title function_">removeFromString</span>(<span class="hljs-string">'Elie'</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>); <span class="hljs-comment">// 'El'</span>
+<span class="hljs-title function_">removeFromString</span>(<span class="hljs-string">'Elie'</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>); <span class="hljs-comment">// 'lie'</span>
+<span class="hljs-title function_">removeFromString</span>(<span class="hljs-string">'Rithm School'</span>, <span class="hljs-number">0</span>, <span class="hljs-number">6</span>); <span class="hljs-comment">// 'School'</span>
+<span class="hljs-title function_">removeFromString</span>(<span class="hljs-string">'Rithm School'</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>); <span class="hljs-comment">// 'RiSchool'</span>
+<span class="hljs-title function_">removeFromString</span>(<span class="hljs-string">'Rithm School'</span>, <span class="hljs-number">6</span>, <span class="hljs-number">400</span>); <span class="hljs-comment">// 'Rithm '</span>
+</code></pre>
+<h3 id="removevowels" class="code-line" data-line="305">removeVowels</h3>
+<p class="code-line" data-line="307">Write a function called<span>&nbsp;</span><strong>removeVowels</strong><span>&nbsp;</span>which will accept a string and return a new string with all the vowels removed. You should not consider "y" to be a vowel.</p>
+<p class="code-line" data-line="309">Examples:</p>
+<pre><code class="code-line language-js" data-line="311"><span class="hljs-title function_">removeVowels</span>(<span class="hljs-string">'Hello!'</span>); <span class="hljs-comment">// "Hll!"</span>
+<span class="hljs-title function_">removeVowels</span>(<span class="hljs-string">'Tomatoes'</span>); <span class="hljs-comment">// "Tmts"</span>
+<span class="hljs-title function_">removeVowels</span>(<span class="hljs-string">'Reverse Vowels In The String'</span>); <span class="hljs-comment">// "Rvrs Vwls n Th Strng"</span>
+<span class="hljs-title function_">removeVowels</span>(<span class="hljs-string">'aeiou'</span>); <span class="hljs-comment">// ""</span>
+<span class="hljs-title function_">removeVowels</span>(<span class="hljs-string">'why try, shy fly?'</span>); <span class="hljs-comment">// "why try, shy fly?"</span>
+</code></pre>
+<h3 id="repeat" class="code-line" data-line="319">repeat</h3>
+<p class="code-line" data-line="321">Write a function called<span>&nbsp;</span><strong>repeat,</strong><span>&nbsp;</span>which accepts a string and a number and returns a new string with the string repeated that number of times.</p>
+<p class="code-line" data-line="323"><strong>Do not use the built in repeat method</strong></p>
+<p class="code-line" data-line="325">Examples:</p>
+<pre><code class="code-line language-js" data-line="327"><span class="hljs-title function_">repeat</span>(<span class="hljs-string">'Matt'</span>, <span class="hljs-number">3</span>); <span class="hljs-comment">// 'MattMattMatt'</span>
+<span class="hljs-title function_">repeat</span>(<span class="hljs-string">'Elie'</span>, <span class="hljs-number">2</span>); <span class="hljs-comment">// 'ElieElie'</span>
+<span class="hljs-title function_">repeat</span>(<span class="hljs-string">'Michael'</span>, <span class="hljs-number">0</span>); <span class="hljs-comment">// ''</span>
+</code></pre>
+<h3 id="separate" class="code-line" data-line="333">separate</h3>
+<p class="code-line" data-line="335">Dogs don't get along with cats, and cats don't get along with dogs.</p>
+<p class="code-line" data-line="337">What they both have in common is that they don't get along with water (baths).</p>
+<p class="code-line" data-line="339">Given an array of 'dogs', 'cats', and 'water', write a function called<span>&nbsp;</span><strong>separate,</strong><span>&nbsp;</span>which returns a new array so that the dogs are separated from the cats by water.<span>&nbsp;</span><strong>Make sure that cats always come first in the array.</strong></p>
+<p class="code-line" data-line="341">You can assume that the array will always at least three elements, and that there'll always be at least one dog, one cat, and one water to work with.</p>
+<p class="code-line" data-line="343"><strong>Examples:</strong></p>
+<pre><code class="code-line language-js" data-line="345"><span class="hljs-title function_">separate</span>([<span class="hljs-string">'dog'</span>, <span class="hljs-string">'cat'</span>, <span class="hljs-string">'water'</span>]); <span class="hljs-comment">// ['cat','water','dog']</span>
+
+<span class="hljs-title function_">separate</span>([<span class="hljs-string">'dog'</span>, <span class="hljs-string">'cat'</span>, <span class="hljs-string">'water'</span>, <span class="hljs-string">'cat'</span>]); <span class="hljs-comment">// ['cat', 'cat', 'water', 'dog'])</span>
+
+<span class="hljs-title function_">separate</span>([<span class="hljs-string">'cat'</span>, <span class="hljs-string">'cat'</span>, <span class="hljs-string">'water'</span>, <span class="hljs-string">'dog'</span>, <span class="hljs-string">'water'</span>, <span class="hljs-string">'cat'</span>, <span class="hljs-string">'water'</span>, <span class="hljs-string">'dog'</span>]);
+
+<span class="hljs-comment">// ['cat','cat','cat','water','water','water','dog','dog']</span>
+
+<span class="hljs-title function_">separate</span>([
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'cat'</span>,
+  <span class="hljs-string">'dog'</span>,
+  <span class="hljs-string">'water'</span>,
+  <span class="hljs-string">'water'</span>,
+  <span class="hljs-string">'water'</span>,
+  <span class="hljs-string">'water'</span>,
+  <span class="hljs-string">'water'</span>,
+  <span class="hljs-string">'water'</span>,
+  <span class="hljs-string">'water'</span>,
+  <span class="hljs-string">'water'</span>,
+  <span class="hljs-string">'water'</span>,
+  <span class="hljs-string">'water'</span>,
+  <span class="hljs-string">'water'</span>,
+  <span class="hljs-string">'water'</span>,
+  <span class="hljs-string">'water'</span>,
+  <span class="hljs-string">'water'</span>,
+]);
+
+<span class="hljs-comment">/* ['cat','cat','cat','cat','cat',
+    'cat','cat','cat','cat','cat','cat',
+    'cat','cat','cat','cat','cat','cat','cat',
+    'water','water','water','water','water',
+    'water','water','water','water','water','water',
+    'water','water','water', 'dog']
+*/</span>
+</code></pre>
+<h3 id="slice" class="code-line" data-line="399">slice</h3>
+<p class="code-line" data-line="401">Write a function called<span>&nbsp;</span><strong>slice,</strong><span>&nbsp;</span>which accepts an array, and two numbers.</p>
+<p class="code-line" data-line="403">The function should return a new array with the elements starting at the index of the first number and going until the index of the second number.</p>
+<p class="code-line" data-line="405">If a third parameter is not passed to the function, it should slice until the end of the array by default.</p>
+<p class="code-line" data-line="407">If the third parameter is greater than the length of the array, it should slice until the end of the array.</p>
+<p class="code-line" data-line="409">Do not use the built in<span>&nbsp;</span><code>Array.slice()</code><span>&nbsp;</span>function!</p>
+<p class="code-line" data-line="411">Examples:</p>
+<pre><code class="code-line language-js" data-line="413"><span class="hljs-title function_">slice</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>], <span class="hljs-number">0</span>, <span class="hljs-number">2</span>); <span class="hljs-comment">// [1, 2]</span>
+<span class="hljs-title function_">slice</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>], <span class="hljs-number">2</span>, <span class="hljs-number">4</span>); <span class="hljs-comment">// [3, 4]</span>
+<span class="hljs-title function_">slice</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>], <span class="hljs-number">2</span>); <span class="hljs-comment">// [3, 4, 5]</span>
+<span class="hljs-title function_">slice</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>], <span class="hljs-number">2</span>, <span class="hljs-number">10</span>); <span class="hljs-comment">// [3, 4, 5]</span>
+</code></pre>
+<h3 id="squareevennumbers" class="code-line" data-line="420">squareEvenNumbers</h3>
+<p class="code-line" data-line="422">Write a function called<span>&nbsp;</span><strong>squareEvenNumbers</strong><span>&nbsp;</span>which accepts an array and returns the sum of all of the even numbers in the array squared.</p>
+<p class="code-line" data-line="424">Examples:</p>
+<pre><code class="code-line language-js" data-line="426"><span class="hljs-title function_">squareEvenNumbers</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]); <span class="hljs-comment">// 20</span>
+<span class="hljs-title function_">squareEvenNumbers</span>([<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>]); <span class="hljs-comment">// 0</span>
+<span class="hljs-title function_">squareEvenNumbers</span>([<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>]); <span class="hljs-comment">// 36</span>
+</code></pre>
+<h3 id="stringfromobject" class="code-line" data-line="432">stringFromObject</h3>
+<p class="code-line" data-line="434">Write a function called<span>&nbsp;</span><strong>stringFromObject</strong><span>&nbsp;</span>that generates a string from an object's key/value pairs.</p>
+<p class="code-line" data-line="436">The format should be "key = value, key = value".</p>
+<p class="code-line" data-line="438">Each key/value pair should be separated by a comma and space except for the last pair.</p>
+<p class="code-line" data-line="440">Examples:</p>
+<pre><code class="code-line language-js" data-line="442"><span class="hljs-title function_">stringFromObject</span>({ <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: <span class="hljs-string">'2'</span> });
+<span class="hljs-comment">// "a = 1, b = 2"</span>
+
+<span class="hljs-title function_">stringFromObject</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'Elie'</span>, <span class="hljs-attr">job</span>: <span class="hljs-string">'Instructor'</span>, <span class="hljs-attr">isCatOwner</span>: <span class="hljs-literal">false</span> });
+<span class="hljs-comment">// "name = Elie, job = Instructor, isCatOwner = false"</span>
+
+<span class="hljs-title function_">stringFromObject</span>({}); <span class="hljs-comment">// ""</span>
+</code></pre>
+<h3 id="stringincludes" class="code-line" data-line="452">stringIncludes</h3>
+<p class="code-line" data-line="454">Write a function called<span>&nbsp;</span><strong>stringIncludes,</strong><span>&nbsp;</span>which accepts two strings: the first string is a word and the second string is a single character.</p>
+<p class="code-line" data-line="456">The function should return<span>&nbsp;</span><code>true</code><span>&nbsp;</span>if the first string includes the character, otherwise it should return<span>&nbsp;</span><code>false</code>.</p>
+<p class="code-line" data-line="458">Do not use the built in<span>&nbsp;</span><code>String.includes()</code><span>&nbsp;</span>function!</p>
+<p class="code-line" data-line="460">Examples:</p>
+<pre><code class="code-line language-js" data-line="462"><span class="hljs-title function_">stringIncludes</span>(<span class="hljs-string">'awesome'</span>, <span class="hljs-string">'e'</span>); <span class="hljs-comment">// true</span>
+<span class="hljs-title function_">stringIncludes</span>(<span class="hljs-string">'awesome'</span>, <span class="hljs-string">'z'</span>); <span class="hljs-comment">// false</span>
+</code></pre>
+<h3 id="stringindexof" class="code-line" data-line="467">stringIndexOf</h3>
+<p class="code-line" data-line="469">Write a function called<span>&nbsp;</span><strong>stringIndexOf,</strong><span>&nbsp;</span>which accepts two strings: the first is a word and the second is a single character.</p>
+<p class="code-line" data-line="471">The function should return the first index in the word at which the character exists or<span>&nbsp;</span><code>-1</code><span>&nbsp;</span>if the character is not found.</p>
+<p class="code-line" data-line="473">Do not use the built in<span>&nbsp;</span><code>"string".indexOf()</code><span>&nbsp;</span>function!</p>
+<p class="code-line" data-line="475">Examples:</p>
+<pre><code class="code-line language-js" data-line="477"><span class="hljs-title function_">stringIndexOf</span>(<span class="hljs-string">'awesome'</span>, <span class="hljs-string">'e'</span>); <span class="hljs-comment">// 2</span>
+<span class="hljs-title function_">stringIndexOf</span>(<span class="hljs-string">'awesome'</span>, <span class="hljs-string">'z'</span>); <span class="hljs-comment">// -1</span>
+</code></pre>
+<h3 id="stringlastindexof" class="code-line" data-line="482">stringLastIndexOf</h3>
+<p class="code-line" data-line="484">Write a function called<span>&nbsp;</span><strong>stringLastIndexOf,</strong><span>&nbsp;</span>which accepts two strings: the first is a word and the second is a single character.</p>
+<p class="code-line" data-line="486">The function should return the last index at which the character exists or<span>&nbsp;</span><code>-1</code><span>&nbsp;</span>if the character is not found.</p>
+<p class="code-line" data-line="488">Do not use the built in<span>&nbsp;</span><code>"string".lastIndexOf()</code><span>&nbsp;</span><strong>function!</strong></p>
+<p class="code-line" data-line="490">Examples:</p>
+<pre><code class="code-line language-js" data-line="492"><span class="hljs-title function_">stringLastIndexOf</span>(<span class="hljs-string">'awesome'</span>, <span class="hljs-string">'e'</span>); <span class="hljs-comment">// 6</span>
+<span class="hljs-title function_">stringLastIndexOf</span>(<span class="hljs-string">'awesome'</span>, <span class="hljs-string">'z'</span>); <span class="hljs-comment">// -1</span>
+</code></pre>
+<h3 id="totalcaps" class="code-line" data-line="497">totalCaps</h3>
+<p class="code-line" data-line="499">Write a function called<span>&nbsp;</span><strong>totalCaps,</strong><span>&nbsp;</span>which accepts an array of strings and returns the total number of capitals in each of the strings. Do<span>&nbsp;</span><strong>not</strong><span>&nbsp;</span>convert the array into a string.</p>
+<p class="code-line" data-line="501">Examples:</p>
+<pre><code class="code-line language-js" data-line="503"><span class="hljs-title function_">totalCaps</span>([<span class="hljs-string">'AwesomE'</span>, <span class="hljs-string">'ThIngs'</span>, <span class="hljs-string">'hAppEning'</span>, <span class="hljs-string">'HerE'</span>]); <span class="hljs-comment">// 8</span>
+<span class="hljs-title function_">totalCaps</span>([<span class="hljs-string">'Elie'</span>, <span class="hljs-string">'Matt'</span>, <span class="hljs-string">'Tim'</span>]); <span class="hljs-comment">// 3</span>
+<span class="hljs-title function_">totalCaps</span>([<span class="hljs-string">'hello'</span>, <span class="hljs-string">'world'</span>]); <span class="hljs-comment">// 0</span>
+</code></pre>
+<h3 id="twohighest" class="code-line" data-line="509">twoHighest</h3>
+<p class="code-line" data-line="511">Write a function called<span>&nbsp;</span><strong>twoHighest</strong><span>&nbsp;</span>that takes an array of numbers as its argument and returns the<span>&nbsp;</span><strong>two highest numbers within the array</strong>.</p>
+<p class="code-line" data-line="513">The returned value should be an array in the following format:<span>&nbsp;</span><code>[secondHighest, highest]</code></p>
+<p class="code-line" data-line="515">The order of the numbers passed in could be any order.</p>
+<p class="code-line" data-line="517"><strong>Do not use the build in sort() method - the tests will fail!</strong></p>
+<p class="code-line" data-line="519">Examples:</p>
+<pre><code class="code-line language-js" data-line="521"><span class="hljs-title function_">twoHighest</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">10</span>, <span class="hljs-number">8</span>]); <span class="hljs-comment">// [8, 10]</span>
+<span class="hljs-title function_">twoHighest</span>([<span class="hljs-number">6</span>, <span class="hljs-number">1</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-number">4</span>]); <span class="hljs-comment">// [9,10]</span>
+<span class="hljs-title function_">twoHighest</span>([<span class="hljs-number">4</span>, <span class="hljs-number">25</span>, <span class="hljs-number">3</span>, <span class="hljs-number">20</span>, <span class="hljs-number">19</span>, <span class="hljs-number">5</span>]); <span class="hljs-comment">// [20,25]</span>
+<span class="hljs-title function_">twoHighest</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>]); <span class="hljs-comment">// [2, 2];</span>
+</code></pre>
+<h3 id="values" class="code-line" data-line="528">values</h3>
+<p class="code-line" data-line="530">Write a function called<span>&nbsp;</span><strong>values,</strong><span>&nbsp;</span>which accepts an object and returns an array of all of the values in the object.</p>
+<p class="code-line" data-line="532">Do not use the built in<span>&nbsp;</span><code>Object.values()</code><span>&nbsp;</span>function!</p>
+<p class="code-line" data-line="534">Examples:</p>
+<pre><code class="code-line language-js" data-line="536"><span class="hljs-keyword">let</span> obj = { <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">c</span>: <span class="hljs-number">3</span> };
+<span class="hljs-title function_">values</span>(obj); <span class="hljs-comment">// [1,2,3]</span>
+
+<span class="hljs-keyword">let</span> obj2 = { <span class="hljs-attr">first</span>: <span class="hljs-string">'Matt'</span>, <span class="hljs-attr">last</span>: <span class="hljs-string">'Lane'</span>, <span class="hljs-attr">isDogOwner</span>: <span class="hljs-literal">true</span> };
+<span class="hljs-title function_">values</span>(obj2); <span class="hljs-comment">// ["Matt", "Lane", true]</span>
+
+<span class="hljs-keyword">let</span> obj3 = {};
+<span class="hljs-title function_">values</span>(obj3); <span class="hljs-comment">// []</span></code></pre>
