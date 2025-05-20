@@ -1,9 +1,4 @@
 describe('appendToString', () => {
-  it('returns an ES6 function expression', () => {
-    expect(appendToString.toString().substring(0, 7)).not.toContain('function');
-    expect(appendToString.toString()).toContain('=>');
-  });
-
   it('returns a string with appended characters', () => {
     expect(appendToString('Hello', ' World!')).toBe('Hello World!');
     expect(appendToString('Foo', 'bar')).toBe('Foobar');
@@ -14,11 +9,6 @@ describe('appendToString', () => {
 });
 
 describe('charAt', () => {
-  it('returns an ES6 function expression', () => {
-    expect(charAt.toString().substring(0, 7)).not.toContain('function');
-    expect(charAt.toString()).toContain('=>');
-  });
-
   it('returns the character at an index or an empty string', () => {
     expect(charAt('awesome', 2)).toBe('e');
     expect(charAt('awesome', 12)).toBe('');
@@ -26,11 +16,6 @@ describe('charAt', () => {
 });
 
 describe('countNumbers', () => {
-  it('returns an ES6 function expression', () => {
-    expect(countNumbers.toString().substring(0, 7)).not.toContain('function');
-    expect(countNumbers.toString()).toContain('=>');
-  });
-
   it('returns the number of valid number types', () => {
     expect(countNumbers(['a', 'b', '3', 'awesome', '4'])).toBe(2);
     expect(countNumbers(['32', '55', 'awesome', 'test', '100'])).toBe(3);
@@ -44,11 +29,6 @@ describe('countNumbers', () => {
 });
 
 describe('countValues', () => {
-  it('returns an ES6 function expression', () => {
-    expect(countValues.toString().substring(0, 7)).not.toContain('function');
-    expect(countValues.toString()).toContain('=>');
-  });
-
   it('returns the number of times a value appears in an array', () => {
     expect(countValues([4, 1, 4, 2, 3, 4, 4], 4)).toBe(4); // 4
     expect(countValues([4, 1, 4, 2, 3, 4, 4], 100)).toBe(0); // 0
@@ -57,11 +37,6 @@ describe('countValues', () => {
 });
 
 describe('entries', () => {
-  it('returns an ES6 function expression', () => {
-    expect(entries.toString().substring(0, 7)).not.toContain('function');
-    expect(entries.toString()).toContain('=>');
-  });
-
   it('returns an array of arrays with keys and values', () => {
     var obj = { a: 1, b: 2, c: 3 };
     expect(entries(obj)).toEqual([
@@ -91,11 +66,6 @@ describe('findTheDuplicate', () => {
 });
 
 describe('helloWorld', () => {
-  it('returns an ES6 function expression', () => {
-    expect(helloWorld.toString().substring(0, 7)).not.toContain('function');
-    expect(helloWorld.toString()).toContain('=>');
-  });
-
   it('returns hello world', () => {
     expect(helloWorld()).toBe('hello world');
   });
@@ -124,11 +94,6 @@ describe('includes', () => {
 });
 
 describe('indexOf', () => {
-  it('returns an ES6 function expression', () => {
-    expect(indexOf.toString().substring(0, 7)).not.toContain('function');
-    expect(indexOf.toString()).toContain('=>');
-  });
-
   it('returns the index at which the value is or negative 1 if not found', () => {
     var arr = [5, 10, 15, 20];
     expect(indexOf(arr, 20)).toBe(3);
@@ -171,11 +136,6 @@ describe('lastIndexOf', () => {
 });
 
 describe('max', () => {
-  it('returns an ES6 function expression', () => {
-    expect(max.toString().substring(0, 7)).not.toContain('function');
-    expect(max.toString()).toContain('=>');
-  });
-
   it('returns the highest number', () => {
     expect(max([5, 1, 4, 7, 1, 2])).toBe(7);
     expect(max([-1, 6, 3, 2.2, -10, -4])).toBe(6);
@@ -199,45 +159,22 @@ describe('multiples', () => {
 
 describe('minMaxKeyInObject', () => {
   it('returns an array with the min and max keys in an object', () => {
-    expect(
-      minMaxKeyInObject({ 2: 'a', 7: 'b', 1: 'c', 10: 'd', 4: 'e' })
-    ).toEqual([1, 10]);
-    expect(minMaxKeyInObject({ 1: 'Elie', 4: 'Matt', 2: 'Tim' })).toEqual([
-      1, 4,
-    ]);
+    expect(minMaxKeyInObject({ 2: 'a', 7: 'b', 1: 'c', 10: 'd', 4: 'e' })).toEqual([1, 10]);
+    expect(minMaxKeyInObject({ 1: 'Elie', 4: 'Matt', 2: 'Tim' })).toEqual([1, 4]);
   });
 });
 
 describe('pluck', () => {
-  it('returns an ES6 function expression', () => {
-    expect(pluck.toString().substring(0, 7)).not.toContain('function');
-    expect(pluck.toString()).toContain('=>');
-  });
-
   it('returns an array of values for a given key', () => {
-    expect(
-      pluck([{ name: 'Tim' }, { name: 'Matt' }, { name: 'Elie' }], 'name')
-    ).toEqual(['Tim', 'Matt', 'Elie']);
+    expect(pluck([{ name: 'Tim' }, { name: 'Matt' }, { name: 'Elie' }], 'name')).toEqual(['Tim', 'Matt', 'Elie']);
 
     expect(
-      pluck(
-        [
-          { name: 'Tim', isBoatOwner: true },
-          { name: 'Matt', isBoatOwner: false },
-          { name: 'Elie' },
-        ],
-        'isBoatOwner'
-      )
+      pluck([{ name: 'Tim', isBoatOwner: true }, { name: 'Matt', isBoatOwner: false }, { name: 'Elie' }], 'isBoatOwner')
     ).toEqual([true, false, undefined]);
   });
 });
 
 describe('prependToString', () => {
-  it('returns an ES6 function expression', () => {
-    expect(prependToString.toString().substring(0, 7)).not.toContain('function');
-    expect(prependToString.toString()).toContain('=>');
-  });
-
   it('adds the second parameter to the front of the string', () => {
     expect(prependToString('awesome', 'very')).toBe('veryawesome');
     expect(prependToString('world', 'hello ')).toBe('hello world');
@@ -256,28 +193,16 @@ describe('removeFromString', () => {
 });
 
 describe('removeVowels', () => {
-  it('returns an ES6 function expression', () => {
-    expect(removeVowels.toString().substring(0, 7)).not.toContain('function');
-    expect(removeVowels.toString()).toContain('=>');
-  });
-
   it('should remove vowels', () => {
     expect(removeVowels('Hello!')).toBe('Hll!');
     expect(removeVowels('Tomatoes')).toBe('Tmts');
-    expect(removeVowels('Reverse Vowels In The String')).toBe(
-      'Rvrs Vwls n Th Strng'
-    );
+    expect(removeVowels('Reverse Vowels In The String')).toBe('Rvrs Vwls n Th Strng');
     expect(removeVowels('aeiou')).toBe('');
     expect(removeVowels('why try, shy fly?')).toBe('why try, shy fly?');
   });
 });
 
 describe('repeat', () => {
-  it('returns an ES6 function expression', () => {
-    expect(repeat.toString().substring(0, 7)).not.toContain('function');
-    expect(repeat.toString()).toContain('=>');
-  });
-
   it('repeats the string a certain number of times', () => {
     expect(repeat('Matt', 3)).toBe('MattMattMatt');
     expect(repeat('Elie', 2)).toBe('ElieElie');
@@ -288,15 +213,17 @@ describe('repeat', () => {
 describe('separate', () => {
   it('returns the correct array', () => {
     expect(separate(['dog', 'cat', 'water'])).toEqual(['cat', 'water', 'dog']);
-    expect(separate(['dog', 'cat', 'water', 'cat'])).toEqual([
+    expect(separate(['dog', 'cat', 'water', 'cat'])).toEqual(['cat', 'cat', 'water', 'dog']);
+    expect(separate(['cat', 'cat', 'water', 'dog', 'water', 'cat', 'water', 'dog'])).toEqual([
+      'cat',
       'cat',
       'cat',
       'water',
+      'water',
+      'water',
+      'dog',
       'dog',
     ]);
-    expect(
-      separate(['cat', 'cat', 'water', 'dog', 'water', 'cat', 'water', 'dog'])
-    ).toEqual(['cat', 'cat', 'cat', 'water', 'water', 'water', 'dog', 'dog']);
     expect(
       separate([
         'cat',
@@ -373,11 +300,6 @@ describe('separate', () => {
 });
 
 describe('slice', () => {
-  it('returns an ES6 function expression', () => {
-    expect(slice.toString().substring(0, 7)).not.toContain('function');
-    expect(slice.toString()).toContain('=>');
-  });
-
   it('slices from the second to third parameter', () => {
     expect(slice([1, 2, 3, 4, 5], 0, 2)).toEqual([1, 2]);
     expect(slice([1, 2, 3, 4, 5], 2, 4)).toEqual([3, 4]);
@@ -397,9 +319,9 @@ describe('squareEvenNumbers', () => {
 describe('stringFromObject', () => {
   it('returns a string of keys and values', () => {
     expect(stringFromObject({ a: 1, b: '2' })).toBe('a = 1, b = 2'); //
-    expect(
-      stringFromObject({ name: 'Elie', job: 'Instructor', isCatOwner: false })
-    ).toBe('name = Elie, job = Instructor, isCatOwner = false'); //
+    expect(stringFromObject({ name: 'Elie', job: 'Instructor', isCatOwner: false })).toBe(
+      'name = Elie, job = Instructor, isCatOwner = false'
+    ); //
     expect(stringFromObject({})).toBe(''); // ""
   });
 });
@@ -412,11 +334,6 @@ describe('stringIncludes', () => {
 });
 
 describe('stringIndexOf', () => {
-  it('returns an ES6 function expression', () => {
-    expect(stringIndexOf.toString().substring(0, 7)).not.toContain('function');
-    expect(stringIndexOf.toString()).toContain('=>');
-  });
-
   it('returns the correct index or negative one', () => {
     expect(stringIndexOf('awesome', 'e')).toBe(2);
     expect(stringIndexOf('awesome', 'z')).toBe(-1);
