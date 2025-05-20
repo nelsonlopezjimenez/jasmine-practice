@@ -171,7 +171,7 @@ Do not use the built in `Object.entries()` function!
 
 ---
 
-### findTheDuplicate
+### findTheDuplicate()
 
 Write a function called **findTheDuplicate** which accepts an array of numbers containing a single duplicate. The function returns the number which is a duplicate or undefined if there are no duplicates.
 
@@ -193,7 +193,7 @@ Test for Arrow function usage
 
 ---
 
-### helloWorld
+### helloWorld()
 
 Write a function called **helloWorld** which returns a string of "hello world".
 
@@ -222,7 +222,7 @@ Test for Arrow function usage
 
 ---
 
-### includes
+### includes()
 
 Write a function called **`includes`** which accepts a `collection`, a `value`, and an optional starting `index`.
 The function should return `true` if the `value` exists in the collection when we search starting from the starting `index`. Otherwise, it should return `false`.
@@ -262,21 +262,12 @@ Test for Arrow function usage
 
 ---
 
-### indexOf
-
-#### Level 1
-
-#### Level 2
-
-#### Level 3
-
-Test for Arrow function usage
+### indexOf()
 
 Write a function called **indexOf,** which accepts an array and a number.
-
 The function should return the first index at which the value exists or `-1` if the value is not found.
 
-Do not use the built in `Array.indexOf()` function!
+#### Level 1
 
 Examples:
 
@@ -291,11 +282,24 @@ let arr3 = [1, 2];
 indexOf(arr3, 10); // -1
 ```
 
-### isAlt
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+Do not use the built in `Array.indexOf()` function!
+
+---
+
+### isAlt()
 
 #### Level 1
 
+No level one tests
+
 #### Level 2
+
+no level two tests
 
 #### Level 3
 
@@ -311,19 +315,13 @@ isAlt('apple'); // false
 isAlt('banana'); // true
 ```
 
-### keys
+---
+
+### keys()
 
 #### Level 1
 
-#### Level 2
-
-#### Level 3
-
-Test for Arrow function usage
-
 Write a function called **keys,** which accepts an object and returns an array of all of the keys in the object.
-
-Do not use the built in `Object.keys()` function!
 
 Examples:
 
@@ -333,10 +331,24 @@ keys(obj); // ["a", "b", "c"]
 
 let obj2 = { first: 'Matt', last: 'Lane' };
 keys(obj2); // ["first", "last"]
+```
 
+#### Level 2
+
+Examples:
+
+```js
 let obj3 = {};
 keys(obj3); // []
 ```
+
+#### Level 3
+
+Test for Arrow function usage
+
+Do not use the built in `Object.keys()` function!
+
+---
 
 ### lastIndexOf
 
