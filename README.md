@@ -1,6 +1,8 @@
 # jasmine-interview-test-prep
 
 ## 5.20.2025
+1. committed first the version enforcing arrow function syntax.
+1. committed second the original version.
 
 ## Keywords: github github interview test prep
 1. https://github.com/rohan-paul/Awesome-JavaScript-Interviews
