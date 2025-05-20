@@ -1,12 +1,36 @@
 # Intro to Jasmine Code Challenges
 
-Your assignment is to write the following functions, in ECMAScript 6 (aka ES6) Arrow Function format, using the descriptions below. When defining your functions, you cannot use built-in JavaScript Array Iterators.
+Your assignment is to write and annotate code to fulfill each task below.
+Each task has been broken into levels by difficulty.
+
+- Level 1: **Make it work** You have no restrictions and don't have to handle any edge cases.
+  Simply write some code that makes the test pass.
+
+- Level 2: **Basic Edge cases** There are some instances where you don't get the input you are expecting.
+  Here you must handle these cases to ensure that your code doesn't break when someone else is using it.
+
+- Level 3: **The Full Monty** These are tests that require you to replicate the built in methods without using them. Write your function as an ECMAScript 6 (aka ES6) and consider more difficult to handle edge cases.
 
 Good luck!
 
-### appendToString
+---
+
+### Here are some resources that may help
+
+- [W3 Schools Arrow Functions](http://localhost:22022/websites/www.w3schools.com/js/js_arrow_function.html)
+
+- [MDN Arrow Functions](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions.html)
+
+- [W3 Schools Alphabetical JavaScript Reference](http://localhost:22022/websites/www.w3schools.com/jsref/jsref_reference.html)
+- [MDN JavaScript Reference](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference.html)
+
+---
+
+### appendToString()
 
 The function should return a new string which consists of the second string appended to the first string.
+
+#### Level 1
 
 Examples:
 
@@ -18,24 +42,54 @@ appendToString('', 'test'); // "test"
 appendToString('other test', ''); // "other test"
 ```
 
-### charAt
+#### Level 2
+
+No tests for level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
+---
+
+### charAt()
+
+#### Level 1
 
 Write a function called **charAt** which accepts a string and an index (number) and returns the character at that index.
 
-The function should return an empty string if the number is greater than the length of the string.
-
-**Do not use the built in charAt method**
-
-Examples:
+Example:
 
 ```js
 charAt('awesome', 2); // 'e'
+```
+
+#### Level 2
+
+The function should return an empty string if the number is greater than the length of the string.
+
+Example:
+
+```js
 charAt('awesome', 12); // ''
 ```
 
-### countNumbers
+#### Level 3
+
+- Test for Arrow function usage.
+- Tests that charAt method is not being used.
+
+---
+
+### countNumbers()
 
 Write a function called **countNumbers**, which accepts an array of strings. The function should return a count of the number of strings in the array that can be successfully converted into a number. For example, the string "1" can be successfully converted to the number 1, but the string "hello" cannot be converted into a number.
+
+#### Level 1
+
+No tests for level one.
+
+#### Level 2
 
 Examples:
 
@@ -43,13 +97,28 @@ Examples:
 countNumbers(['a', 'b', '3', 'awesome', '4']); // 2
 countNumbers(['32', '55', 'awesome', 'test', '100']); // 3
 countNumbers('[]'); // 0
+```
+
+#### Level 3
+
+Test for Arrow function usage
+
+Examples:
+
+```js
 countNumbers(['4', '1', '0', 'NaN']); // 3
 countNumbers(['7', '12', 'a', '', '6', '8', ' ']); // 4
 ```
 
-### countValues
+---
+
+### countValues()
 
 Write a function called **countValues** which accepts an array and a number and returns the number of times that value appears in the array.
+
+#### Level 1
+
+#### Level 2
 
 Examples:
 
@@ -59,7 +128,21 @@ countValues([4, 1, 4, 2, 3, 4, 4], 100); // 0
 countValues([], 1); // 0
 ```
 
-### entries
+#### Level 3
+
+Test for Arrow function usage
+
+---
+
+### entries()
+
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
 
 Write a function called **entries,** which accepts an object and returns an array of arrays of key-value pairs.
 
@@ -84,6 +167,14 @@ entries(obj3); // []
 
 ### findTheDuplicate
 
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
 Write a function called **findTheDuplicate** which accepts an array of numbers containing a single duplicate. The function returns the number which is a duplicate or undefined if there are no duplicates.
 
 Examples:
@@ -96,6 +187,14 @@ findTheDuplicate([2, 1, 3, 4]); // undefined
 
 ### helloWorld
 
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
 Write a function called **helloWorld** which returns a string of "hello world".
 
 Example:
@@ -105,6 +204,14 @@ helloWorld(); // 'hello world'
 ```
 
 ### includes
+
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
 
 Write a function called **`includes`** which accepts a `collection`, a `value`, and an optional starting `index`. The function should return `true` if the `value` exists in the collection when we search starting from the starting `index`. Otherwise, it should return `false`.
 
@@ -127,6 +234,14 @@ includes('abcd', 'a', 2); // false
 
 ### indexOf
 
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
 Write a function called **indexOf,** which accepts an array and a number.
 
 The function should return the first index at which the value exists or `-1` if the value is not found.
@@ -148,6 +263,14 @@ indexOf(arr3, 10); // -1
 
 ### isAlt
 
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
 Create a function `isAlt` that accepts a string as an argument and validates whether the vowels (a, e, i, o, u) and consonants are in alternate order.
 
 Examples:
@@ -159,6 +282,14 @@ isAlt('banana'); // true
 ```
 
 ### keys
+
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
 
 Write a function called **keys,** which accepts an object and returns an array of all of the keys in the object.
 
@@ -179,6 +310,14 @@ keys(obj3); // []
 
 ### lastIndexOf
 
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
 Write a function called **lastIndexOf,** which accepts an array and a number.
 
 The function should return the last index at which the value exists, or `-1` if the value is not found.
@@ -195,6 +334,14 @@ lastIndexOf([1, 2, 3, 4], 22); // -1
 
 ### max
 
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
 Write a function called **max,** which accepts an array and returns the highest value.
 
 Do not use the built-in `Math.max()` function!
@@ -209,6 +356,14 @@ max([-1, 6, 3, 2.2, -10, -4]); // 6
 
 ### min
 
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
 Write a function called **min,** which accepts an array of numbers and returns the lowest value.
 
 Do note use the built-in `Math.min()` function!
@@ -221,6 +376,14 @@ min([-1, 6, 3, 2.2, -10, -4]); // -10
 ```
 
 ### minMaxKeyInObject
+
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
 
 Write a function called **minMaxKeyInObject** that accepts an object with numeric keys.\*
 
@@ -237,6 +400,14 @@ minMaxKeyInObject({ 1: 'Elie', 4: 'Matt', 2: 'Tim' });
 
 ### multiples
 
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
 Implement a function called **multiples** that accepts two numbers: **_x_** and **_n_**.
 
 The function should return the first **_n_** multiples of the number **_x_**.
@@ -251,6 +422,14 @@ multiples(2, 5); // [2, 4, 6, 8, 10]
 ```
 
 ### pluck
+
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
 
 Write a function called **pluck**, which takes an array of objects and the name of a key.
 
@@ -275,6 +454,14 @@ pluck(
 
 ### prependToString
 
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
 Write a function called **prependToString,** which accepts two strings.
 
 The function should return a new string with the second string prepended to the first string.
@@ -288,6 +475,14 @@ prependToString('nothing', ''); // 'nothing'
 ```
 
 ### removeFromString
+
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
 
 Write a function called **removeFromString,** which accepts a string, a starting index (number) and a number of characters to remove.
 
@@ -305,6 +500,14 @@ removeFromString('Rithm School', 6, 400); // 'Rithm '
 
 ### removeVowels
 
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
 Write a function called **removeVowels** which will accept a string and return a new string with all the vowels removed. You should not consider "y" to be a vowel.
 
 Examples:
@@ -319,6 +522,14 @@ removeVowels('why try, shy fly?'); // "why try, shy fly?"
 
 ### repeat
 
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
 Write a function called **repeat,** which accepts a string and a number and returns a new string with the string repeated that number of times.
 
 **Do not use the built in repeat method**
@@ -332,6 +543,14 @@ repeat('Michael', 0); // ''
 ```
 
 ### separate
+
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
 
 Dogs don't get along with cats, and cats don't get along with dogs.
 
@@ -399,6 +618,14 @@ separate([
 
 ### slice
 
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
 Write a function called **slice,** which accepts an array, and two numbers.
 
 The function should return a new array with the elements starting at the index of the first number and going until the index of the second number.
@@ -420,6 +647,14 @@ slice([1, 2, 3, 4, 5], 2, 10); // [3, 4, 5]
 
 ### squareEvenNumbers
 
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
 Write a function called **squareEvenNumbers** which accepts an array and returns the sum of all of the even numbers in the array squared.
 
 Examples:
@@ -431,6 +666,14 @@ squareEvenNumbers([5, 6, 7]); // 36
 ```
 
 ### stringFromObject
+
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
 
 Write a function called **stringFromObject** that generates a string from an object's key/value pairs.
 
@@ -452,6 +695,14 @@ stringFromObject({}); // ""
 
 ### stringIncludes
 
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
 Write a function called **stringIncludes,** which accepts two strings: the first string is a word and the second string is a single character.
 
 The function should return `true` if the first string includes the character, otherwise it should return `false`.
@@ -466,6 +717,14 @@ stringIncludes('awesome', 'z'); // false
 ```
 
 ### stringIndexOf
+
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
 
 Write a function called **stringIndexOf,** which accepts two strings: the first is a word and the second is a single character.
 
@@ -482,6 +741,14 @@ stringIndexOf('awesome', 'z'); // -1
 
 ### stringLastIndexOf
 
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
 Write a function called **stringLastIndexOf,** which accepts two strings: the first is a word and the second is a single character.
 
 The function should return the last index at which the character exists or `-1` if the character is not found.
@@ -497,6 +764,14 @@ stringLastIndexOf('awesome', 'z'); // -1
 
 ### totalCaps
 
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
+
 Write a function called **totalCaps,** which accepts an array of strings and returns the total number of capitals in each of the strings. Do **not** convert the array into a string.
 
 Examples:
@@ -508,6 +783,14 @@ totalCaps(['hello', 'world']); // 0
 ```
 
 ### twoHighest
+
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
 
 Write a function called **twoHighest** that takes an array of numbers as its argument and returns the **two highest numbers within the array**.
 
@@ -527,6 +810,14 @@ twoHighest([1, 2, 2]); // [2, 2];
 ```
 
 ### values
+
+#### Level 1
+
+#### Level 2
+
+#### Level 3
+
+Test for Arrow function usage
 
 Write a function called **values,** which accepts an object and returns an array of all of the values in the object.
 
