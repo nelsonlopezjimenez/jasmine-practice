@@ -581,19 +581,11 @@ removeVowels('why try, shy fly?'); // "why try, shy fly?"
 
 ---
 
-### repeat
+### repeat()
 
 Write a function called **repeat,** which accepts a string and a number and returns a new string with the string repeated that number of times.
 
 #### Level 1
-
-#### Level 2
-
-#### Level 3
-
-Test for Arrow function usage
-
-**Do not use the built in repeat method**
 
 Examples:
 
@@ -603,15 +595,17 @@ repeat('Elie', 2); // 'ElieElie'
 repeat('Michael', 0); // ''
 ```
 
-### separate
-
-#### Level 1
-
 #### Level 2
 
 #### Level 3
 
 Test for Arrow function usage
+
+**Do not use the built in repeat method**
+
+---
+
+### separate()
 
 Dogs don't get along with cats, and cats don't get along with dogs.
 
@@ -620,6 +614,10 @@ What they both have in common is that they don't get along with water (baths).
 Given an array of 'dogs', 'cats', and 'water', write a function called **separate,** which returns a new array so that the dogs are separated from the cats by water. **Make sure that cats always come first in the array.**
 
 You can assume that the array will always at least three elements, and that there'll always be at least one dog, one cat, and one water to work with.
+
+#### Level 1
+
+#### Level 2
 
 **Examples:**
 
@@ -677,15 +675,13 @@ separate([
 */
 ```
 
-### slice
-
-#### Level 1
-
-#### Level 2
-
 #### Level 3
 
 Test for Arrow function usage
+
+---
+
+### slice()
 
 Write a function called **slice,** which accepts an array, and two numbers.
 
@@ -695,7 +691,7 @@ If a third parameter is not passed to the function, it should slice until the en
 
 If the third parameter is greater than the length of the array, it should slice until the end of the array.
 
-Do not use the built in `Array.slice()` function!
+#### Level 1
 
 Examples:
 
@@ -706,17 +702,21 @@ slice([1, 2, 3, 4, 5], 2); // [3, 4, 5]
 slice([1, 2, 3, 4, 5], 2, 10); // [3, 4, 5]
 ```
 
-### squareEvenNumbers
-
-#### Level 1
-
 #### Level 2
 
 #### Level 3
 
 Test for Arrow function usage
 
+Do not use the built in `Array.slice()` function!
+
+---
+
+### squareEvenNumbers()
+
 Write a function called **squareEvenNumbers** which accepts an array and returns the sum of all of the even numbers in the array squared.
+
+#### Level 1
 
 Examples:
 
@@ -726,21 +726,25 @@ squareEvenNumbers([1, 3, 5, 7]); // 0
 squareEvenNumbers([5, 6, 7]); // 36
 ```
 
-### stringFromObject
-
-#### Level 1
-
 #### Level 2
 
 #### Level 3
 
 Test for Arrow function usage
 
+---
+
+### stringFromObject()
+
 Write a function called **stringFromObject** that generates a string from an object's key/value pairs.
 
 The format should be "key = value, key = value".
 
 Each key/value pair should be separated by a comma and space except for the last pair.
+
+#### Level 1
+
+#### Level 2
 
 Examples:
 
@@ -754,21 +758,19 @@ stringFromObject({ name: 'Elie', job: 'Instructor', isCatOwner: false });
 stringFromObject({}); // ""
 ```
 
-### stringIncludes
-
-#### Level 1
-
-#### Level 2
-
 #### Level 3
 
 Test for Arrow function usage
+
+---
+
+### stringIncludes
 
 Write a function called **stringIncludes,** which accepts two strings: the first string is a word and the second string is a single character.
 
 The function should return `true` if the first string includes the character, otherwise it should return `false`.
 
-Do not use the built in `String.includes()` function!
+#### Level 1
 
 Examples:
 
@@ -777,21 +779,23 @@ stringIncludes('awesome', 'e'); // true
 stringIncludes('awesome', 'z'); // false
 ```
 
-### stringIndexOf
-
-#### Level 1
-
 #### Level 2
 
 #### Level 3
 
 Test for Arrow function usage
 
+Do not use the built in `String.includes()` function!
+
+---
+
+### stringIndexOf()
+
 Write a function called **stringIndexOf,** which accepts two strings: the first is a word and the second is a single character.
 
 The function should return the first index in the word at which the character exists or `-1` if the character is not found.
 
-Do not use the built in `"string".indexOf()` function!
+#### Level 1
 
 Examples:
 
@@ -800,21 +804,23 @@ stringIndexOf('awesome', 'e'); // 2
 stringIndexOf('awesome', 'z'); // -1
 ```
 
-### stringLastIndexOf
-
-#### Level 1
-
 #### Level 2
 
 #### Level 3
 
 Test for Arrow function usage
 
+Do not use the built in `"string".indexOf()` function!
+
+---
+
+### stringLastIndexOf()
+
 Write a function called **stringLastIndexOf,** which accepts two strings: the first is a word and the second is a single character.
 
 The function should return the last index at which the character exists or `-1` if the character is not found.
 
-Do not use the built in `"string".lastIndexOf()` **function!**
+#### Level 1
 
 Examples:
 
@@ -823,17 +829,23 @@ stringLastIndexOf('awesome', 'e'); // 6
 stringLastIndexOf('awesome', 'z'); // -1
 ```
 
-### totalCaps
-
-#### Level 1
-
 #### Level 2
 
 #### Level 3
 
 Test for Arrow function usage
 
-Write a function called **totalCaps,** which accepts an array of strings and returns the total number of capitals in each of the strings. Do **not** convert the array into a string.
+Do not use the built in `"string".lastIndexOf()` **function!**
+
+---
+
+### totalCaps()
+
+Write a function called **totalCaps,** which accepts an array of strings and returns the total number of capitals in each of the strings.
+
+#### Level 1
+
+#### Level 2
 
 Examples:
 
@@ -843,7 +855,20 @@ totalCaps(['Elie', 'Matt', 'Tim']); // 3
 totalCaps(['hello', 'world']); // 0
 ```
 
-### twoHighest
+#### Level 3
+
+Test for Arrow function usage
+Do **not** convert the array into a string.
+
+---
+
+### twoHighest()
+
+Write a function called **twoHighest** that takes an array of numbers as its argument and returns the **two highest numbers within the array**.
+
+The returned value should be an array in the following format: `[secondHighest, highest]`
+
+The order of the numbers passed in could be any order.
 
 #### Level 1
 
@@ -852,13 +877,6 @@ totalCaps(['hello', 'world']); // 0
 #### Level 3
 
 Test for Arrow function usage
-
-Write a function called **twoHighest** that takes an array of numbers as its argument and returns the **two highest numbers within the array**.
-
-The returned value should be an array in the following format: `[secondHighest, highest]`
-
-The order of the numbers passed in could be any order.
-
 **Do not use the build in sort() method - the tests will fail!**
 
 Examples:
@@ -870,19 +888,13 @@ twoHighest([4, 25, 3, 20, 19, 5]); // [20,25]
 twoHighest([1, 2, 2]); // [2, 2];
 ```
 
-### values
+---
 
-#### Level 1
-
-#### Level 2
-
-#### Level 3
-
-Test for Arrow function usage
+### values()
 
 Write a function called **values,** which accepts an object and returns an array of all of the values in the object.
 
-Do not use the built in `Object.values()` function!
+#### Level 1
 
 Examples:
 
@@ -892,7 +904,16 @@ values(obj); // [1,2,3]
 
 let obj2 = { first: 'Matt', last: 'Lane', isDogOwner: true };
 values(obj2); // ["Matt", "Lane", true]
+```
 
+#### Level 2
+
+```js
 let obj3 = {};
 values(obj3); // []
 ```
+
+#### Level 3
+
+Test for Arrow function usage
+Do not use the built in `Object.values()` function!
