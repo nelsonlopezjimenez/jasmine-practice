@@ -138,17 +138,9 @@ Test for Arrow function usage
 
 #### Level 1
 
-#### Level 2
-
-#### Level 3
-
-Test for Arrow function usage
-
 Write a function called **entries,** which accepts an object and returns an array of arrays of key-value pairs.
 
 In other words, each sub-array is an "entry" in the object with two elements: the first element is the key, and the second element is the value.
-
-Do not use the built in `Object.entries()` function!
 
 Examples:
 
@@ -160,22 +152,32 @@ entries(obj);
 let obj2 = { first: 'Matt', last: 'Lane', isDogOwner: true };
 entries(obj2);
 // [["first","Matt"], ["last","Lane"], ["isDogOwner",true]]
+```
 
+#### Level 2
+
+Example:
+
+```js
 let obj3 = {};
 entries(obj3); // []
 ```
-
-### findTheDuplicate
-
-#### Level 1
-
-#### Level 2
 
 #### Level 3
 
 Test for Arrow function usage
 
+Do not use the built in `Object.entries()` function!
+
+---
+
+### findTheDuplicate
+
 Write a function called **findTheDuplicate** which accepts an array of numbers containing a single duplicate. The function returns the number which is a duplicate or undefined if there are no duplicates.
+
+#### Level 1
+
+#### Level 2
 
 Examples:
 
@@ -185,23 +187,40 @@ findTheDuplicate([6, 1, 9, 5, 3, 4, 9]); // 9
 findTheDuplicate([2, 1, 3, 4]); // undefined
 ```
 
+#### Level 3
+
+Test for Arrow function usage
+
+---
+
 ### helloWorld
+
+Write a function called **helloWorld** which returns a string of "hello world".
 
 #### Level 1
 
+```js
+helloWorld(); // 'hello world'
+```
+
 #### Level 2
+
+Refactor hello world to accept a parameter with a [default value](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters.html).
+
+It should return 'hello [name]' if a parameter is passed and 'hello world' if no parameter is passed.
+
+Example:
+
+```js
+helloWorld('jane'); // 'hello jane'
+helloWorld(); // 'hello world'
+```
 
 #### Level 3
 
 Test for Arrow function usage
 
-Write a function called **helloWorld** which returns a string of "hello world".
-
-Example:
-
-```js
-helloWorld(); // 'hello world'
-```
+---
 
 ### includes
 
