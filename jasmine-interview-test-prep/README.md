@@ -350,21 +350,13 @@ Do not use the built in `Object.keys()` function!
 
 ---
 
-### lastIndexOf
-
-#### Level 1
-
-#### Level 2
-
-#### Level 3
-
-Test for Arrow function usage
+### lastIndexOf()
 
 Write a function called **lastIndexOf,** which accepts an array and a number.
 
 The function should return the last index at which the value exists, or `-1` if the value is not found.
 
-Do not use the built in `Array.lastIndexOf()` function!
+#### Level 1
 
 Examples:
 
@@ -374,20 +366,21 @@ lastIndexOf([1, 2, 3, 4, 2], 2); // 4
 lastIndexOf([1, 2, 3, 4], 22); // -1
 ```
 
-### max
-
-#### Level 1
-
 #### Level 2
 
 #### Level 3
 
 Test for Arrow function usage
 
+Do not use the built in `Array.lastIndexOf()` function!
+
+---
+
+### max()
+
+#### Level 1
+
 Write a function called **max,** which accepts an array and returns the highest value.
-
-Do not use the built-in `Math.max()` function!
-
 Examples:
 
 ```js
@@ -396,20 +389,21 @@ max([3, 4, 12, 1, 8]); // 12
 max([-1, 6, 3, 2.2, -10, -4]); // 6
 ```
 
-### min
-
-#### Level 1
-
 #### Level 2
 
 #### Level 3
 
 Test for Arrow function usage
 
+Do not use the built-in `Math.max()` function!
+
+---
+
+### min()
+
+#### Level 1
+
 Write a function called **min,** which accepts an array of numbers and returns the lowest value.
-
-Do note use the built-in `Math.min()` function!
-
 Examples:
 
 ```js
@@ -417,17 +411,23 @@ min([5, 1, 4, 7, 1, 2]); // 1
 min([-1, 6, 3, 2.2, -10, -4]); // -10
 ```
 
-### minMaxKeyInObject
-
-#### Level 1
-
 #### Level 2
 
 #### Level 3
 
 Test for Arrow function usage
 
+Do note use the built-in `Math.min()` function!
+
+---
+
+### minMaxKeyInObject
+
 Write a function called **minMaxKeyInObject** that accepts an object with numeric keys.\*
+
+#### Level 1
+
+#### Level 2
 
 The function should return an array with the following format: `[lowestKey, highestKey]`
 
@@ -440,21 +440,23 @@ minMaxKeyInObject({ 1: 'Elie', 4: 'Matt', 2: 'Tim' });
 // [1, 4]
 ```
 
-### multiples
-
-#### Level 1
-
-#### Level 2
-
 #### Level 3
 
 Test for Arrow function usage
+
+---
+
+### multiples()
 
 Implement a function called **multiples** that accepts two numbers: **_x_** and **_n_**.
 
 The function should return the first **_n_** multiples of the number **_x_**.
 
 Assume that **_x_** is a positive integer.
+
+#### Level 1
+
+#### Level 2
 
 Examples:
 
@@ -463,7 +465,17 @@ multiples(3, 4); // [3, 6, 9, 12]
 multiples(2, 5); // [2, 4, 6, 8, 10]
 ```
 
-### pluck
+#### Level 3
+
+Test for Arrow function usage
+
+---
+
+### pluck()
+
+Write a function called **pluck**, which takes an array of objects and the name of a key.
+
+The function should return an array containing the value associated with that key for each object, or undefined if that key is not present in the object.
 
 #### Level 1
 
@@ -472,10 +484,6 @@ multiples(2, 5); // [2, 4, 6, 8, 10]
 #### Level 3
 
 Test for Arrow function usage
-
-Write a function called **pluck**, which takes an array of objects and the name of a key.
-
-The function should return an array containing the value associated with that key for each object, or undefined if that key is not present in the object.
 
 Examples:
 
@@ -494,18 +502,13 @@ pluck(
 // [true, false, undefined]
 ```
 
-### prependToString
+---
+
+### prependToString()
 
 #### Level 1
 
-#### Level 2
-
-#### Level 3
-
-Test for Arrow function usage
-
 Write a function called **prependToString,** which accepts two strings.
-
 The function should return a new string with the second string prepended to the first string.
 
 Examples:
@@ -516,19 +519,22 @@ prependToString('world', 'hello '); // 'hello world'
 prependToString('nothing', ''); // 'nothing'
 ```
 
-### removeFromString
-
-#### Level 1
-
 #### Level 2
 
 #### Level 3
 
 Test for Arrow function usage
 
-Write a function called **removeFromString,** which accepts a string, a starting index (number) and a number of characters to remove.
+---
 
+### removeFromString()
+
+Write a function called **removeFromString,** which accepts a string, a starting index (number) and a number of characters to remove.
 The function should return a new string with the characters removed.
+
+#### Level 1
+
+#### Level 2
 
 Examples:
 
@@ -537,10 +543,23 @@ removeFromString('Elie', 2, 2); // 'El'
 removeFromString('Elie', 0, 1); // 'lie'
 removeFromString('Rithm School', 0, 6); // 'School'
 removeFromString('Rithm School', 2, 4); // 'RiSchool'
+```
+
+#### Level 3
+
+Test for Arrow function usage
+
+If the number of characters to remove is higher than the string length then the function should remove the remainder of the string.
+
+```js
 removeFromString('Rithm School', 6, 400); // 'Rithm '
 ```
 
+---
+
 ### removeVowels
+
+Write a function called **removeVowels** which will accept a string and return a new string with all the vowels removed. You should not consider "y" to be a vowel.
 
 #### Level 1
 
@@ -549,8 +568,6 @@ removeFromString('Rithm School', 6, 400); // 'Rithm '
 #### Level 3
 
 Test for Arrow function usage
-
-Write a function called **removeVowels** which will accept a string and return a new string with all the vowels removed. You should not consider "y" to be a vowel.
 
 Examples:
 
@@ -562,7 +579,11 @@ removeVowels('aeiou'); // ""
 removeVowels('why try, shy fly?'); // "why try, shy fly?"
 ```
 
+---
+
 ### repeat
+
+Write a function called **repeat,** which accepts a string and a number and returns a new string with the string repeated that number of times.
 
 #### Level 1
 
@@ -571,8 +592,6 @@ removeVowels('why try, shy fly?'); // "why try, shy fly?"
 #### Level 3
 
 Test for Arrow function usage
-
-Write a function called **repeat,** which accepts a string and a number and returns a new string with the string repeated that number of times.
 
 **Do not use the built in repeat method**
 
