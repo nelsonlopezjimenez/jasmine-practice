@@ -1,4 +1,4 @@
-const min = () => {
+function min() {
   // Annotation:
   // Using code comments, write out the step-by-step process for your solution using plain English
   // This is called 'pseudocode'
