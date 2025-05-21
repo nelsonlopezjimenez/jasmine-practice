@@ -11,11 +11,11 @@ const removeFromString = (str, start, end) => {
 // Examples:
 
 // ```js
-console.log(removeFromString('Elie', 2, 2)); // 'El'
-console.log(removeFromString('Elie', 0, 1)); // 'lie'
-console.log(removeFromString('Rithm School', 0, 6)); // 'School'
-console.log(removeFromString('Rithm School', 2, 4)); // 'RiSchool'
-console.log(removeFromString('Rithm School', 6, 400)); // 'Rithm '
+console.log(removeFromString('Elie', 2, 2)); // 'El' slice: 
+console.log(removeFromString('Elie', 0, 1)); // 'lie' slice: E
+console.log(removeFromString('Rithm School', 0, 6)); // 'School' slice: Rhithm
+console.log(removeFromString('Rithm School', 2, 4)); // 'RiSchool' slice: th
+console.log(removeFromString('Rithm School', 6, 400)); // 'Rithm ' slice: School
 
 /**Description
 The slice() method extracts a part of a string.
