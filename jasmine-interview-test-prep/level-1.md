@@ -244,11 +244,6 @@ prependToString('nothing', ''); // 'nothing'
 ```
 
 
----
-
-
----
-
 
 
 ---

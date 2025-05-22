@@ -92,6 +92,85 @@ The character at index 999 is ''
 
 ## Object.entries()
 
+### From W3S
+1. ![entries w3s](images/level-1/entries-obj-w3s.png)
+1. ![entries w3s examples](images/level-1/entries-obj-w3s-examples.png)
+1. ![entries w3s rel methods](images/level-1/entries-obj-relatedMethods.png)
+1. ![]()
+
+### From MDN Object.entries()
+The **`Object.entries()`** static method returns an array of a given object's own enumerable string-keyed property key-value pairs.
+
+{{InteractiveExample("JavaScript Demo: Object.entries()")}}
+
+```js interactive-example
+const object1 = {
+  a: "some string",
+  b: 42,
+};
+
+for (const [key, value] of Object.entries(object1)) {
+  console.log(`${key}: ${value}`);
+}
+
+// Expected output:
+// "a: some string"
+// "b: 42"
+```
+
+## Syntax
+
+```js-nolint
+Object.entries(obj)
+```
+
+### Parameters
+
+- `obj`
+  - : An object.
+
+### Return value
+
+An array of the given object's own enumerable string-keyed property key-value pairs. Each key-value pair is an array with two elements: the first element is the property key (which is always a string), and the second element is the property value.
+
+## Description
+
+`Object.entries()` returns an array whose elements are arrays corresponding to the enumerable string-keyed property key-value pairs found directly upon `object`. 
+
+If you only need the property keys, use {{jsxref("Object.keys()")}} instead. If you only need the property values, use {{jsxref("Object.values()")}} instead.
+
+## Examples
+
+### Using Object.entries()
+
+```js
+const obj = { foo: "bar", baz: 42 };
+console.log(Object.entries(obj)); // [ ['foo', 'bar'], ['baz', 42] ]
+
+const arrayLike = { 0: "a", 1: "b", 2: "c" };
+console.log(Object.entries(arrayLike)); // [ ['0', 'a'], ['1', 'b'], ['2', 'c'] ]
+```
+
+### Iterating through an Object
+
+Using [array destructuring](/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring#array_destructuring), you can iterate through objects easily.
+
+```js
+// Using for...of loop
+const obj = { a: 5, b: 7, c: 9 };
+for (const [key, value] of Object.entries(obj)) {
+  console.log(`${key} ${value}`); // "a 5", "b 7", "c 9"
+}
+
+// Using array methods
+Object.entries(obj).forEach(([key, value]) => {
+  console.log(`${key} ${value}`); // "a 5", "b 7", "c 9"
+});
+```
+
+
+
+
 ## Array.indexOf()
 
 ## Object.keys()
