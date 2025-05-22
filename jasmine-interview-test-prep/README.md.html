@@ -1,97 +1,181 @@
-<h1>Intro to Jasmine Code Challenges</h1>
-<p>Your assignment is to write and annotate code to fulfill each task below.
-Each task has been broken into levels by difficulty.</p>
-<ul>
-<li><p>Level 1: <strong>Make it work</strong> You have no restrictions and don&#39;t have to handle any edge cases.
-Simply write some code that makes the test pass.</p>
-</li>
-<li><p>Level 2: <strong>Basic Edge cases</strong> There are some instances where you don&#39;t get the input you are expecting.
-Here you must handle these cases to ensure that your code doesn&#39;t break when someone else is using it.</p>
-</li>
-<li><p>Level 3: <strong>The Full Monty</strong> These are tests that require you to replicate the built in methods without using them. Write your function as an ECMAScript 6 (aka ES6) and consider more difficult to handle edge cases.</p>
-</li>
-</ul>
-<p>Good luck!</p>
-<hr>
-<h3>Here are some resources that may help</h3>
-<ul>
-<li><p><a href="http://localhost:22022/websites/www.w3schools.com/js/js_arrow_function.html">W3 Schools Arrow Functions</a></p>
-</li>
-<li><p><a href="http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions.html">MDN Arrow Functions</a></p>
-</li>
-<li><p><a href="http://localhost:22022/websites/www.w3schools.com/jsref/jsref_reference.html">W3 Schools Alphabetical JavaScript Reference</a></p>
-</li>
-<li><p><a href="http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference.html">MDN JavaScript Reference</a></p>
-</li>
-</ul>
-<hr>
-<h3>appendToString()</h3>
-<p>The function should return a new string which consists of the second string appended to the first string.</p>
-<h4>Level 1</h4>
-<p>Examples:</p>
-<pre><code class="language-js">appendToString(&#39;Hello&#39;, &#39; World!&#39;); // &quot;Hello World!&quot;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Jasmine Practice Readme</title>
+    <style>
+      pre {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Intro to Jasmine Code Challenges</h1>
+    <p>
+      Your assignment is to write and annotate code to fulfill each task below.
+      Each task has been broken into levels by difficulty.
+    </p>
+    <ul>
+      <li>
+        <p>
+          Level 1: <strong>Make it work</strong> You have no restrictions and
+          don&#39;t have to handle any edge cases. Simply write some code that
+          makes the test pass.
+        </p>
+      </li>
+      <li>
+        <p>
+          Level 2: <strong>Basic Edge cases</strong> There are some instances
+          where you don&#39;t get the input you are expecting. Here you must
+          handle these cases to ensure that your code doesn&#39;t break when
+          someone else is using it.
+        </p>
+      </li>
+      <li>
+        <p>
+          Level 3: <strong>The Full Monty</strong> These are tests that require
+          you to replicate the built in methods without using them. Write your
+          function as an ECMAScript 6 (aka ES6) and consider more difficult to
+          handle edge cases.
+        </p>
+      </li>
+    </ul>
+    <p>Good luck!</p>
+    <hr />
+    <h3>Here are some resources that may help</h3>
+    <ul>
+      <li>
+        <p>
+          <a
+            href="http://localhost:22022/websites/www.w3schools.com/js/js_arrow_function.html"
+            >W3 Schools Arrow Functions</a
+          >
+        </p>
+      </li>
+      <li>
+        <p>
+          <a
+            href="http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions.html"
+            >MDN Arrow Functions</a
+          >
+        </p>
+      </li>
+      <li>
+        <p>
+          <a
+            href="http://localhost:22022/websites/www.w3schools.com/jsref/jsref_reference.html"
+            >W3 Schools Alphabetical JavaScript Reference</a
+          >
+        </p>
+      </li>
+      <li>
+        <p>
+          <a
+            href="http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference.html"
+            >MDN JavaScript Reference</a
+          >
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <h3>appendToString()</h3>
+    <p>
+      The function should return a new string which consists of the second
+      string appended to the first string.
+    </p>
+    <h4>Level 1</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">appendToString(&#39;Hello&#39;, &#39; World!&#39;); // &quot;Hello World!&quot;
 appendToString(&#39;Foo&#39;, &#39;bar&#39;); // &quot;Foobar&quot;
 appendToString(&#39;bar&#39;, &#39;Foo&#39;); // &quot;barFoo&quot;
 appendToString(&#39;&#39;, &#39;test&#39;); // &quot;test&quot;
 appendToString(&#39;other test&#39;, &#39;&#39;); // &quot;other test&quot;
 </code></pre>
-<h4>Level 2</h4>
-<p>No tests for level 2</p>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<hr>
-<h3>charAt()</h3>
-<h4>Level 1</h4>
-<p>Write a function called <strong>charAt</strong> which accepts a string and an index (number) and returns the character at that index.</p>
-<p>Example:</p>
-<pre><code class="language-js">charAt(&#39;awesome&#39;, 2); // &#39;e&#39;
+    <h4>Level 2</h4>
+    <p>No tests for level 2</p>
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <hr />
+    <h3>charAt()</h3>
+    <h4>Level 1</h4>
+    <p>
+      Write a function called <strong>charAt</strong> which accepts a string and
+      an index (number) and returns the character at that index.
+    </p>
+    <p>Example:</p>
+    <pre><code class="language-js">charAt(&#39;awesome&#39;, 2); // &#39;e&#39;
 </code></pre>
-<h4>Level 2</h4>
-<p>The function should return an empty string if the number is greater than the length of the string.</p>
-<p>Example:</p>
-<pre><code class="language-js">charAt(&#39;awesome&#39;, 12); // &#39;&#39;
+    <h4>Level 2</h4>
+    <p>
+      The function should return an empty string if the number is greater than
+      the length of the string.
+    </p>
+    <p>Example:</p>
+    <pre><code class="language-js">charAt(&#39;awesome&#39;, 12); // &#39;&#39;
 </code></pre>
-<h4>Level 3</h4>
-<ul>
-<li>Test for Arrow function usage.</li>
-<li>Tests that charAt method is not being used.</li>
-</ul>
-<hr>
-<h3>countNumbers()</h3>
-<p>Write a function called <strong>countNumbers</strong>, which accepts an array of strings. The function should return a count of the number of strings in the array that can be successfully converted into a number. For example, the string &quot;1&quot; can be successfully converted to the number 1, but the string &quot;hello&quot; cannot be converted into a number.</p>
-<h4>Level 1</h4>
-<p>No tests for level one.</p>
-<h4>Level 2</h4>
-<p>Examples:</p>
-<pre><code class="language-js">countNumbers([&#39;a&#39;, &#39;b&#39;, &#39;3&#39;, &#39;awesome&#39;, &#39;4&#39;]); // 2
+    <h4>Level 3</h4>
+    <ul>
+      <li>Test for Arrow function usage.</li>
+      <li>Tests that charAt method is not being used.</li>
+    </ul>
+    <hr />
+    <h3>countNumbers()</h3>
+    <p>
+      Write a function called <strong>countNumbers</strong>, which accepts an
+      array of strings. The function should return a count of the number of
+      strings in the array that can be successfully converted into a number. For
+      example, the string &quot;1&quot; can be successfully converted to the
+      number 1, but the string &quot;hello&quot; cannot be converted into a
+      number.
+    </p>
+    <h4>Level 1</h4>
+    <p>No tests for level one.</p>
+    <h4>Level 2</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">countNumbers([&#39;a&#39;, &#39;b&#39;, &#39;3&#39;, &#39;awesome&#39;, &#39;4&#39;]); // 2
 countNumbers([&#39;32&#39;, &#39;55&#39;, &#39;awesome&#39;, &#39;test&#39;, &#39;100&#39;]); // 3
 countNumbers(&#39;[]&#39;); // 0
 </code></pre>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<p>Examples:</p>
-<pre><code class="language-js">countNumbers([&#39;4&#39;, &#39;1&#39;, &#39;0&#39;, &#39;NaN&#39;]); // 3
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <p>Examples:</p>
+    <pre><code class="language-js">countNumbers([&#39;4&#39;, &#39;1&#39;, &#39;0&#39;, &#39;NaN&#39;]); // 3
 countNumbers([&#39;7&#39;, &#39;12&#39;, &#39;a&#39;, &#39;&#39;, &#39;6&#39;, &#39;8&#39;, &#39; &#39;]); // 4
 </code></pre>
-<hr>
-<h3>countValues()</h3>
-<p>Write a function called <strong>countValues</strong> which accepts an array and a number and returns the number of times that value appears in the array.</p>
-<h4>Level 1</h4>
-<h4>Level 2</h4>
-<p>Examples:</p>
-<pre><code class="language-js">countValues([4, 1, 4, 2, 3, 4, 4], 4); // 4
+    <hr />
+    <h3>countValues()</h3>
+    <p>
+      Write a function called <strong>countValues</strong> which accepts an
+      array and a number and returns the number of times that value appears in
+      the array.
+    </p>
+    <h4>Level 1</h4>
+    <h4>Level 2</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">countValues([4, 1, 4, 2, 3, 4, 4], 4); // 4
 countValues([4, 1, 4, 2, 3, 4, 4], 100); // 0
 countValues([], 1); // 0
 </code></pre>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<hr>
-<h3>entries()</h3>
-<h4>Level 1</h4>
-<p>Write a function called <strong>entries,</strong> which accepts an object and returns an array of arrays of key-value pairs.</p>
-<p>In other words, each sub-array is an &quot;entry&quot; in the object with two elements: the first element is the key, and the second element is the value.</p>
-<p>Examples:</p>
-<pre><code class="language-js">let obj = { a: 1, b: 2, c: 3 };
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <hr />
+    <h3>entries()</h3>
+    <h4>Level 1</h4>
+    <p>
+      Write a function called <strong>entries,</strong> which accepts an object
+      and returns an array of arrays of key-value pairs.
+    </p>
+    <p>
+      In other words, each sub-array is an &quot;entry&quot; in the object with
+      two elements: the first element is the key, and the second element is the
+      value.
+    </p>
+    <p>Examples:</p>
+    <pre><code class="language-js">let obj = { a: 1, b: 2, c: 3 };
 entries(obj);
 // [[&quot;a&quot;,1], [&quot;b&quot;,2], [&quot;c&quot;,3]]
 
@@ -99,50 +183,76 @@ let obj2 = { first: &#39;Matt&#39;, last: &#39;Lane&#39;, isDogOwner: true };
 entries(obj2);
 // [[&quot;first&quot;,&quot;Matt&quot;], [&quot;last&quot;,&quot;Lane&quot;], [&quot;isDogOwner&quot;,true]]
 </code></pre>
-<h4>Level 2</h4>
-<p>Example:</p>
-<pre><code class="language-js">let obj3 = {};
+    <h4>Level 2</h4>
+    <p>Example:</p>
+    <pre><code class="language-js">let obj3 = {};
 entries(obj3); // []
 </code></pre>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<p>Do not use the built in <code>Object.entries()</code> function!</p>
-<hr>
-<h3>findTheDuplicate()</h3>
-<p>Write a function called <strong>findTheDuplicate</strong> which accepts an array of numbers containing a single duplicate. The function returns the number which is a duplicate or undefined if there are no duplicates.</p>
-<h4>Level 1</h4>
-<h4>Level 2</h4>
-<p>Examples:</p>
-<pre><code class="language-js">findTheDuplicate([1, 2, 1, 4, 3, 12]); // 1
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <p>Do not use the built in <code>Object.entries()</code> function!</p>
+    <hr />
+    <h3>findTheDuplicate()</h3>
+    <p>
+      Write a function called <strong>findTheDuplicate</strong> which accepts an
+      array of numbers containing a single duplicate. The function returns the
+      number which is a duplicate or undefined if there are no duplicates.
+    </p>
+    <h4>Level 1</h4>
+    <h4>Level 2</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">findTheDuplicate([1, 2, 1, 4, 3, 12]); // 1
 findTheDuplicate([6, 1, 9, 5, 3, 4, 9]); // 9
 findTheDuplicate([2, 1, 3, 4]); // undefined
 </code></pre>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<hr>
-<h3>helloWorld()</h3>
-<p>Write a function called <strong>helloWorld</strong> which returns a string of &quot;hello world&quot;.</p>
-<h4>Level 1</h4>
-<pre><code class="language-js">helloWorld(); // &#39;hello world&#39;
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <hr />
+    <h3>helloWorld()</h3>
+    <p>
+      Write a function called <strong>helloWorld</strong> which returns a string
+      of &quot;hello world&quot;.
+    </p>
+    <h4>Level 1</h4>
+    <pre><code class="language-js">helloWorld(); // &#39;hello world&#39;
 </code></pre>
-<h4>Level 2</h4>
-<p>Refactor hello world to accept a parameter with a <a href="http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters.html">default value</a>.</p>
-<p>It should return &#39;hello [name]&#39; if a parameter is passed and &#39;hello world&#39; if no parameter is passed.</p>
-<p>Example:</p>
-<pre><code class="language-js">helloWorld(&#39;jane&#39;); // &#39;hello jane&#39;
+    <h4>Level 2</h4>
+    <p>
+      Refactor hello world to accept a parameter with a
+      <a
+        href="http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters.html"
+        >default value</a
+      >.
+    </p>
+    <p>
+      It should return &#39;hello [name]&#39; if a parameter is passed and
+      &#39;hello world&#39; if no parameter is passed.
+    </p>
+    <p>Example:</p>
+    <pre><code class="language-js">helloWorld(&#39;jane&#39;); // &#39;hello jane&#39;
 helloWorld(); // &#39;hello world&#39;
 </code></pre>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<hr>
-<h3>includes()</h3>
-<p>Write a function called <strong><code>includes</code></strong> which accepts a <code>collection</code>, a <code>value</code>, and an optional starting <code>index</code>.
-The function should return <code>true</code> if the <code>value</code> exists in the collection when we search starting from the starting <code>index</code>. Otherwise, it should return <code>false</code>.</p>
-<h4>Level 1</h4>
-<h4>Level 2</h4>
-<p>The collection can be a string, or an array. If the collection is a string or array, the third parameter is a starting index for where to search from.</p>
-<p>Examples:</p>
-<pre><code class="language-js">includes([1, 2, 3], 1); // true
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <hr />
+    <h3>includes()</h3>
+    <p>
+      Write a function called <strong><code>includes</code></strong> which
+      accepts a <code>collection</code>, a <code>value</code>, and an optional
+      starting <code>index</code>. The function should return
+      <code>true</code> if the <code>value</code> exists in the collection when
+      we search starting from the starting <code>index</code>. Otherwise, it
+      should return <code>false</code>.
+    </p>
+    <h4>Level 1</h4>
+    <h4>Level 2</h4>
+    <p>
+      The collection can be a string, or an array. If the collection is a string
+      or array, the third parameter is a starting index for where to search
+      from.
+    </p>
+    <p>Examples:</p>
+    <pre><code class="language-js">includes([1, 2, 3], 1); // true
 includes([1, 2, 3], 1, 2); // false
 includes([1, 2, 3], 6); // false
 
@@ -150,22 +260,29 @@ includes(&#39;abcd&#39;, &#39;b&#39;); // true
 includes(&#39;abcd&#39;, &#39;e&#39;); // false
 includes(&#39;abcd&#39;, &#39;a&#39;, 2); // false
 </code></pre>
-<h4>Level 3</h4>
-<p>For level three the the collection can now be a string, array or an object.
-If the collection is a string or array, the third parameter is a starting index for where to search from.
-If the collection is an object, the function searches for the value among values in the object; since objects have no sort order, the third parameter is ignored.</p>
-<p>Examples:</p>
-<pre><code class="language-js">includes({ a: 1, b: 2 }, 1); // true
+    <h4>Level 3</h4>
+    <p>
+      For level three the the collection can now be a string, array or an
+      object. If the collection is a string or array, the third parameter is a
+      starting index for where to search from. If the collection is an object,
+      the function searches for the value among values in the object; since
+      objects have no sort order, the third parameter is ignored.
+    </p>
+    <p>Examples:</p>
+    <pre><code class="language-js">includes({ a: 1, b: 2 }, 1); // true
 includes({ a: 1, b: 2 }, &#39;a&#39;); // false
 </code></pre>
-<p>Test for Arrow function usage</p>
-<hr>
-<h3>indexOf()</h3>
-<p>Write a function called <strong>indexOf,</strong> which accepts an array and a number.
-The function should return the first index at which the value exists or <code>-1</code> if the value is not found.</p>
-<h4>Level 1</h4>
-<p>Examples:</p>
-<pre><code class="language-js">let arr = [5, 10, 15, 20];
+    <p>Test for Arrow function usage</p>
+    <hr />
+    <h3>indexOf()</h3>
+    <p>
+      Write a function called <strong>indexOf,</strong> which accepts an array
+      and a number. The function should return the first index at which the
+      value exists or <code>-1</code> if the value is not found.
+    </p>
+    <h4>Level 1</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">let arr = [5, 10, 15, 20];
 indexOf(arr, 20); // 3
 
 let arr2 = [1, 2, 3, 4, 5];
@@ -174,119 +291,161 @@ indexOf(arr2, 2); // 1
 let arr3 = [1, 2];
 indexOf(arr3, 10); // -1
 </code></pre>
-<h4>Level 2</h4>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage
-Do not use the built in <code>Array.indexOf()</code> function!</p>
-<hr>
-<h3>isAlt()</h3>
-<h4>Level 1</h4>
-<p>No level one tests</p>
-<h4>Level 2</h4>
-<p>no level two tests</p>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<p>Create a function <code>isAlt</code> that accepts a string as an argument and validates whether the vowels (a, e, i, o, u) and consonants are in alternate order.</p>
-<p>Examples:</p>
-<pre><code class="language-js">isAlt(&#39;amazon&#39;); // true
+    <h4>Level 2</h4>
+    <h4>Level 3</h4>
+    <p>
+      Test for Arrow function usage Do not use the built in
+      <code>Array.indexOf()</code> function!
+    </p>
+    <hr />
+    <h3>isAlt()</h3>
+    <h4>Level 1</h4>
+    <p>No level one tests</p>
+    <h4>Level 2</h4>
+    <p>no level two tests</p>
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <p>
+      Create a function <code>isAlt</code> that accepts a string as an argument
+      and validates whether the vowels (a, e, i, o, u) and consonants are in
+      alternate order.
+    </p>
+    <p>Examples:</p>
+    <pre><code class="language-js">isAlt(&#39;amazon&#39;); // true
 isAlt(&#39;apple&#39;); // false
 isAlt(&#39;banana&#39;); // true
 </code></pre>
-<hr>
-<h3>keys()</h3>
-<h4>Level 1</h4>
-<p>Write a function called <strong>keys,</strong> which accepts an object and returns an array of all of the keys in the object.</p>
-<p>Examples:</p>
-<pre><code class="language-js">let obj = { a: 1, b: 2, c: 3 };
+    <hr />
+    <h3>keys()</h3>
+    <h4>Level 1</h4>
+    <p>
+      Write a function called <strong>keys,</strong> which accepts an object and
+      returns an array of all of the keys in the object.
+    </p>
+    <p>Examples:</p>
+    <pre><code class="language-js">let obj = { a: 1, b: 2, c: 3 };
 keys(obj); // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]
 
 let obj2 = { first: &#39;Matt&#39;, last: &#39;Lane&#39; };
 keys(obj2); // [&quot;first&quot;, &quot;last&quot;]
 </code></pre>
-<h4>Level 2</h4>
-<p>Examples:</p>
-<pre><code class="language-js">let obj3 = {};
+    <h4>Level 2</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">let obj3 = {};
 keys(obj3); // []
 </code></pre>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<p>Do not use the built in <code>Object.keys()</code> function!</p>
-<hr>
-<h3>lastIndexOf()</h3>
-<p>Write a function called <strong>lastIndexOf,</strong> which accepts an array and a number.</p>
-<p>The function should return the last index at which the value exists, or <code>-1</code> if the value is not found.</p>
-<h4>Level 1</h4>
-<p>Examples:</p>
-<pre><code class="language-js">lastIndexOf([1, 2, 3, 4], 2); // 1
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <p>Do not use the built in <code>Object.keys()</code> function!</p>
+    <hr />
+    <h3>lastIndexOf()</h3>
+    <p>
+      Write a function called <strong>lastIndexOf,</strong> which accepts an
+      array and a number.
+    </p>
+    <p>
+      The function should return the last index at which the value exists, or
+      <code>-1</code> if the value is not found.
+    </p>
+    <h4>Level 1</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">lastIndexOf([1, 2, 3, 4], 2); // 1
 lastIndexOf([1, 2, 3, 4, 2], 2); // 4
 lastIndexOf([1, 2, 3, 4], 22); // -1
 </code></pre>
-<h4>Level 2</h4>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<p>Do not use the built in <code>Array.lastIndexOf()</code> function!</p>
-<hr>
-<h3>max()</h3>
-<h4>Level 1</h4>
-<p>Write a function called <strong>max,</strong> which accepts an array and returns the highest value.
-Examples:</p>
-<pre><code class="language-js">max([5, 1, 4, 7, 1, 2]); // 7
+    <h4>Level 2</h4>
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <p>Do not use the built in <code>Array.lastIndexOf()</code> function!</p>
+    <hr />
+    <h3>max()</h3>
+    <h4>Level 1</h4>
+    <p>
+      Write a function called <strong>max,</strong> which accepts an array and
+      returns the highest value. Examples:
+    </p>
+    <pre><code class="language-js">max([5, 1, 4, 7, 1, 2]); // 7
 max([3, 4, 12, 1, 8]); // 12
 max([-1, 6, 3, 2.2, -10, -4]); // 6
 </code></pre>
-<h4>Level 2</h4>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<p>Do not use the built-in <code>Math.max()</code> function!</p>
-<hr>
-<h3>min()</h3>
-<h4>Level 1</h4>
-<p>Write a function called <strong>min,</strong> which accepts an array of numbers and returns the lowest value.
-Examples:</p>
-<pre><code class="language-js">min([5, 1, 4, 7, 1, 2]); // 1
+    <h4>Level 2</h4>
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <p>Do not use the built-in <code>Math.max()</code> function!</p>
+    <hr />
+    <h3>min()</h3>
+    <h4>Level 1</h4>
+    <p>
+      Write a function called <strong>min,</strong> which accepts an array of
+      numbers and returns the lowest value. Examples:
+    </p>
+    <pre><code class="language-js">min([5, 1, 4, 7, 1, 2]); // 1
 min([-1, 6, 3, 2.2, -10, -4]); // -10
 </code></pre>
-<h4>Level 2</h4>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<p>Do note use the built-in <code>Math.min()</code> function!</p>
-<hr>
-<h3>minMaxKeyInObject</h3>
-<p>Write a function called <strong>minMaxKeyInObject</strong> that accepts an object with numeric keys.*</p>
-<h4>Level 1</h4>
-<h4>Level 2</h4>
-<p>The function should return an array with the following format: <code>[lowestKey, highestKey]</code></p>
-<p>Examples:</p>
-<pre><code class="language-js">minMaxKeyInObject({ 2: &#39;a&#39;, 7: &#39;b&#39;, 1: &#39;c&#39;, 10: &#39;d&#39;, 4: &#39;e&#39; });
+    <h4>Level 2</h4>
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <p>Do note use the built-in <code>Math.min()</code> function!</p>
+    <hr />
+    <h3>minMaxKeyInObject</h3>
+    <p>
+      Write a function called <strong>minMaxKeyInObject</strong> that accepts an
+      object with numeric keys.*
+    </p>
+    <h4>Level 1</h4>
+    <h4>Level 2</h4>
+    <p>
+      The function should return an array with the following format:
+      <code>[lowestKey, highestKey]</code>
+    </p>
+    <p>Examples:</p>
+    <pre><code class="language-js">minMaxKeyInObject({ 2: &#39;a&#39;, 7: &#39;b&#39;, 1: &#39;c&#39;, 10: &#39;d&#39;, 4: &#39;e&#39; });
 // [1, 10]
 minMaxKeyInObject({ 1: &#39;Elie&#39;, 4: &#39;Matt&#39;, 2: &#39;Tim&#39; });
 // [1, 4]
 </code></pre>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<hr>
-<h3>multiples()</h3>
-<p>Implement a function called <strong>multiples</strong> that accepts two numbers: <strong><em>x</em></strong> and <strong><em>n</em></strong>.</p>
-<p>The function should return the first <strong><em>n</em></strong> multiples of the number <strong><em>x</em></strong>.</p>
-<p>Assume that <strong><em>x</em></strong> is a positive integer.</p>
-<h4>Level 1</h4>
-<h4>Level 2</h4>
-<p>Examples:</p>
-<pre><code class="language-js">multiples(3, 4); // [3, 6, 9, 12]
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <hr />
+    <h3>multiples()</h3>
+    <p>
+      Implement a function called <strong>multiples</strong> that accepts two
+      numbers: <strong><em>x</em></strong> and <strong><em>n</em></strong
+      >.
+    </p>
+    <p>
+      The function should return the first <strong><em>n</em></strong> multiples
+      of the number <strong><em>x</em></strong
+      >.
+    </p>
+    <p>
+      Assume that <strong><em>x</em></strong> is a positive integer.
+    </p>
+    <h4>Level 1</h4>
+    <h4>Level 2</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">multiples(3, 4); // [3, 6, 9, 12]
 multiples(2, 5); // [2, 4, 6, 8, 10]
 </code></pre>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<hr>
-<h3>pluck()</h3>
-<p>Write a function called <strong>pluck</strong>, which takes an array of objects and the name of a key.</p>
-<p>The function should return an array containing the value associated with that key for each object, or undefined if that key is not present in the object.</p>
-<h4>Level 1</h4>
-<h4>Level 2</h4>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<p>Examples:</p>
-<pre><code class="language-js">pluck([{ name: &#39;Tim&#39; }, { name: &#39;Matt&#39; }, { name: &#39;Elie&#39; }], &#39;name&#39;);
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <hr />
+    <h3>pluck()</h3>
+    <p>
+      Write a function called <strong>pluck</strong>, which takes an array of
+      objects and the name of a key.
+    </p>
+    <p>
+      The function should return an array containing the value associated with
+      that key for each object, or undefined if that key is not present in the
+      object.
+    </p>
+    <h4>Level 1</h4>
+    <h4>Level 2</h4>
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <p>Examples:</p>
+    <pre><code class="language-js">pluck([{ name: &#39;Tim&#39; }, { name: &#39;Matt&#39; }, { name: &#39;Elie&#39; }], &#39;name&#39;);
 // [&quot;Tim&quot;, &quot;Matt&quot;, &quot;Elie&quot;]
 
 pluck(
@@ -299,73 +458,105 @@ pluck(
 );
 // [true, false, undefined]
 </code></pre>
-<hr>
-<h3>prependToString()</h3>
-<h4>Level 1</h4>
-<p>Write a function called <strong>prependToString,</strong> which accepts two strings.
-The function should return a new string with the second string prepended to the first string.</p>
-<p>Examples:</p>
-<pre><code class="language-js">prependToString(&#39;awesome&#39;, &#39;very&#39;); // &#39;veryawesome&#39;
+    <hr />
+    <h3>prependToString()</h3>
+    <h4>Level 1</h4>
+    <p>
+      Write a function called <strong>prependToString,</strong> which accepts
+      two strings. The function should return a new string with the second
+      string prepended to the first string.
+    </p>
+    <p>Examples:</p>
+    <pre><code class="language-js">prependToString(&#39;awesome&#39;, &#39;very&#39;); // &#39;veryawesome&#39;
 prependToString(&#39;world&#39;, &#39;hello &#39;); // &#39;hello world&#39;
 prependToString(&#39;nothing&#39;, &#39;&#39;); // &#39;nothing&#39;
 </code></pre>
-<h4>Level 2</h4>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<hr>
-<h3>removeFromString()</h3>
-<p>Write a function called <strong>removeFromString,</strong> which accepts a string, a starting index (number) and a number of characters to remove.
-The function should return a new string with the characters removed.</p>
-<h4>Level 1</h4>
-<h4>Level 2</h4>
-<p>Examples:</p>
-<pre><code class="language-js">removeFromString(&#39;Elie&#39;, 2, 2); // &#39;El&#39;
+    <h4>Level 2</h4>
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <hr />
+    <h3>removeFromString()</h3>
+    <p>
+      Write a function called <strong>removeFromString,</strong> which accepts a
+      string, a starting index (number) and a number of characters to remove.
+      The function should return a new string with the characters removed.
+    </p>
+    <h4>Level 1</h4>
+    <h4>Level 2</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">removeFromString(&#39;Elie&#39;, 2, 2); // &#39;El&#39;
 removeFromString(&#39;Elie&#39;, 0, 1); // &#39;lie&#39;
 removeFromString(&#39;Rithm School&#39;, 0, 6); // &#39;School&#39;
 removeFromString(&#39;Rithm School&#39;, 2, 4); // &#39;RiSchool&#39;
 </code></pre>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<p>If the number of characters to remove is higher than the string length then the function should remove the remainder of the string.</p>
-<pre><code class="language-js">removeFromString(&#39;Rithm School&#39;, 6, 400); // &#39;Rithm &#39;
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <p>
+      If the number of characters to remove is higher than the string length
+      then the function should remove the remainder of the string.
+    </p>
+    <pre><code class="language-js">removeFromString(&#39;Rithm School&#39;, 6, 400); // &#39;Rithm &#39;
 </code></pre>
-<hr>
-<h3>removeVowels</h3>
-<p>Write a function called <strong>removeVowels</strong> which will accept a string and return a new string with all the vowels removed. You should not consider &quot;y&quot; to be a vowel.</p>
-<h4>Level 1</h4>
-<h4>Level 2</h4>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<p>Examples:</p>
-<pre><code class="language-js">removeVowels(&#39;Hello!&#39;); // &quot;Hll!&quot;
+    <hr />
+    <h3>removeVowels</h3>
+    <p>
+      Write a function called <strong>removeVowels</strong> which will accept a
+      string and return a new string with all the vowels removed. You should not
+      consider &quot;y&quot; to be a vowel.
+    </p>
+    <h4>Level 1</h4>
+    <h4>Level 2</h4>
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <p>Examples:</p>
+    <pre><code class="language-js">removeVowels(&#39;Hello!&#39;); // &quot;Hll!&quot;
 removeVowels(&#39;Tomatoes&#39;); // &quot;Tmts&quot;
 removeVowels(&#39;Reverse Vowels In The String&#39;); // &quot;Rvrs Vwls n Th Strng&quot;
 removeVowels(&#39;aeiou&#39;); // &quot;&quot;
 removeVowels(&#39;why try, shy fly?&#39;); // &quot;why try, shy fly?&quot;
 </code></pre>
-<hr>
-<h3>repeat()</h3>
-<p>Write a function called <strong>repeat,</strong> which accepts a string and a number and returns a new string with the string repeated that number of times.</p>
-<h4>Level 1</h4>
-<p>Examples:</p>
-<pre><code class="language-js">repeat(&#39;Matt&#39;, 3); // &#39;MattMattMatt&#39;
+    <hr />
+    <h3>repeat()</h3>
+    <p>
+      Write a function called <strong>repeat,</strong> which accepts a string
+      and a number and returns a new string with the string repeated that number
+      of times.
+    </p>
+    <h4>Level 1</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">repeat(&#39;Matt&#39;, 3); // &#39;MattMattMatt&#39;
 repeat(&#39;Elie&#39;, 2); // &#39;ElieElie&#39;
 repeat(&#39;Michael&#39;, 0); // &#39;&#39;
 </code></pre>
-<h4>Level 2</h4>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<p><strong>Do not use the built in repeat method</strong></p>
-<hr>
-<h3>separate()</h3>
-<p>Dogs don&#39;t get along with cats, and cats don&#39;t get along with dogs.</p>
-<p>What they both have in common is that they don&#39;t get along with water (baths).</p>
-<p>Given an array of &#39;dogs&#39;, &#39;cats&#39;, and &#39;water&#39;, write a function called <strong>separate,</strong> which returns a new array so that the dogs are separated from the cats by water. <strong>Make sure that cats always come first in the array.</strong></p>
-<p>You can assume that the array will always at least three elements, and that there&#39;ll always be at least one dog, one cat, and one water to work with.</p>
-<h4>Level 1</h4>
-<h4>Level 2</h4>
-<p><strong>Examples:</strong></p>
-<pre><code class="language-js">separate([&#39;dog&#39;, &#39;cat&#39;, &#39;water&#39;]); // [&#39;cat&#39;,&#39;water&#39;,&#39;dog&#39;]
+    <h4>Level 2</h4>
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <p><strong>Do not use the built in repeat method</strong></p>
+    <hr />
+    <h3>separate()</h3>
+    <p>
+      Dogs don&#39;t get along with cats, and cats don&#39;t get along with
+      dogs.
+    </p>
+    <p>
+      What they both have in common is that they don&#39;t get along with water
+      (baths).
+    </p>
+    <p>
+      Given an array of &#39;dogs&#39;, &#39;cats&#39;, and &#39;water&#39;,
+      write a function called <strong>separate,</strong> which returns a new
+      array so that the dogs are separated from the cats by water.
+      <strong>Make sure that cats always come first in the array.</strong>
+    </p>
+    <p>
+      You can assume that the array will always at least three elements, and
+      that there&#39;ll always be at least one dog, one cat, and one water to
+      work with.
+    </p>
+    <h4>Level 1</h4>
+    <h4>Level 2</h4>
+    <p><strong>Examples:</strong></p>
+    <pre><code class="language-js">separate([&#39;dog&#39;, &#39;cat&#39;, &#39;water&#39;]); // [&#39;cat&#39;,&#39;water&#39;,&#39;dog&#39;]
 
 separate([&#39;dog&#39;, &#39;cat&#39;, &#39;water&#39;, &#39;cat&#39;]); // [&#39;cat&#39;, &#39;cat&#39;, &#39;water&#39;, &#39;dog&#39;])
 
@@ -417,46 +608,68 @@ separate([
     &#39;water&#39;,&#39;water&#39;,&#39;water&#39;, &#39;dog&#39;]
 */
 </code></pre>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<hr>
-<h3>slice()</h3>
-<p>Write a function called <strong>slice,</strong> which accepts an array, and two numbers.</p>
-<p>The function should return a new array with the elements starting at the index of the first number and going until the index of the second number.</p>
-<p>If a third parameter is not passed to the function, it should slice until the end of the array by default.</p>
-<p>If the third parameter is greater than the length of the array, it should slice until the end of the array.</p>
-<h4>Level 1</h4>
-<p>Examples:</p>
-<pre><code class="language-js">slice([1, 2, 3, 4, 5], 0, 2); // [1, 2]
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <hr />
+    <h3>slice()</h3>
+    <p>
+      Write a function called <strong>slice,</strong> which accepts an array,
+      and two numbers.
+    </p>
+    <p>
+      The function should return a new array with the elements starting at the
+      index of the first number and going until the index of the second number.
+    </p>
+    <p>
+      If a third parameter is not passed to the function, it should slice until
+      the end of the array by default.
+    </p>
+    <p>
+      If the third parameter is greater than the length of the array, it should
+      slice until the end of the array.
+    </p>
+    <h4>Level 1</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">slice([1, 2, 3, 4, 5], 0, 2); // [1, 2]
 slice([1, 2, 3, 4, 5], 2, 4); // [3, 4]
 slice([1, 2, 3, 4, 5], 2); // [3, 4, 5]
 slice([1, 2, 3, 4, 5], 2, 10); // [3, 4, 5]
 </code></pre>
-<h4>Level 2</h4>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<p>Do not use the built in <code>Array.slice()</code> function!</p>
-<hr>
-<h3>squareEvenNumbers()</h3>
-<p>Write a function called <strong>squareEvenNumbers</strong> which accepts an array and returns the sum of all of the even numbers in the array squared.</p>
-<h4>Level 1</h4>
-<p>Examples:</p>
-<pre><code class="language-js">squareEvenNumbers([1, 2, 3, 4, 5]); // 20
+    <h4>Level 2</h4>
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <p>Do not use the built in <code>Array.slice()</code> function!</p>
+    <hr />
+    <h3>squareEvenNumbers()</h3>
+    <p>
+      Write a function called <strong>squareEvenNumbers</strong> which accepts
+      an array and returns the sum of all of the even numbers in the array
+      squared.
+    </p>
+    <h4>Level 1</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">squareEvenNumbers([1, 2, 3, 4, 5]); // 20
 squareEvenNumbers([1, 3, 5, 7]); // 0
 squareEvenNumbers([5, 6, 7]); // 36
 </code></pre>
-<h4>Level 2</h4>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<hr>
-<h3>stringFromObject()</h3>
-<p>Write a function called <strong>stringFromObject</strong> that generates a string from an object&#39;s key/value pairs.</p>
-<p>The format should be &quot;key = value, key = value&quot;.</p>
-<p>Each key/value pair should be separated by a comma and space except for the last pair.</p>
-<h4>Level 1</h4>
-<h4>Level 2</h4>
-<p>Examples:</p>
-<pre><code class="language-js">stringFromObject({ a: 1, b: &#39;2&#39; });
+    <h4>Level 2</h4>
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <hr />
+    <h3>stringFromObject()</h3>
+    <p>
+      Write a function called <strong>stringFromObject</strong> that generates a
+      string from an object&#39;s key/value pairs.
+    </p>
+    <p>The format should be &quot;key = value, key = value&quot;.</p>
+    <p>
+      Each key/value pair should be separated by a comma and space except for
+      the last pair.
+    </p>
+    <h4>Level 1</h4>
+    <h4>Level 2</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">stringFromObject({ a: 1, b: &#39;2&#39; });
 // &quot;a = 1, b = 2&quot;
 
 stringFromObject({ name: &#39;Elie&#39;, job: &#39;Instructor&#39;, isCatOwner: false });
@@ -464,91 +677,140 @@ stringFromObject({ name: &#39;Elie&#39;, job: &#39;Instructor&#39;, isCatOwner: 
 
 stringFromObject({}); // &quot;&quot;
 </code></pre>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<hr>
-<h3>stringIncludes</h3>
-<p>Write a function called <strong>stringIncludes,</strong> which accepts two strings: the first string is a word and the second string is a single character.</p>
-<p>The function should return <code>true</code> if the first string includes the character, otherwise it should return <code>false</code>.</p>
-<h4>Level 1</h4>
-<p>Examples:</p>
-<pre><code class="language-js">stringIncludes(&#39;awesome&#39;, &#39;e&#39;); // true
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <hr />
+    <h3>stringIncludes</h3>
+    <p>
+      Write a function called <strong>stringIncludes,</strong> which accepts two
+      strings: the first string is a word and the second string is a single
+      character.
+    </p>
+    <p>
+      The function should return <code>true</code> if the first string includes
+      the character, otherwise it should return <code>false</code>.
+    </p>
+    <h4>Level 1</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">stringIncludes(&#39;awesome&#39;, &#39;e&#39;); // true
 stringIncludes(&#39;awesome&#39;, &#39;z&#39;); // false
 </code></pre>
-<h4>Level 2</h4>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<p>Do not use the built in <code>String.includes()</code> function!</p>
-<hr>
-<h3>stringIndexOf()</h3>
-<p>Write a function called <strong>stringIndexOf,</strong> which accepts two strings: the first is a word and the second is a single character.</p>
-<p>The function should return the first index in the word at which the character exists or <code>-1</code> if the character is not found.</p>
-<h4>Level 1</h4>
-<p>Examples:</p>
-<pre><code class="language-js">stringIndexOf(&#39;awesome&#39;, &#39;e&#39;); // 2
+    <h4>Level 2</h4>
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <p>Do not use the built in <code>String.includes()</code> function!</p>
+    <hr />
+    <h3>stringIndexOf()</h3>
+    <p>
+      Write a function called <strong>stringIndexOf,</strong> which accepts two
+      strings: the first is a word and the second is a single character.
+    </p>
+    <p>
+      The function should return the first index in the word at which the
+      character exists or <code>-1</code> if the character is not found.
+    </p>
+    <h4>Level 1</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">stringIndexOf(&#39;awesome&#39;, &#39;e&#39;); // 2
 stringIndexOf(&#39;awesome&#39;, &#39;z&#39;); // -1
 </code></pre>
-<h4>Level 2</h4>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<p>Do not use the built in <code>&quot;string&quot;.indexOf()</code> function!</p>
-<hr>
-<h3>stringLastIndexOf()</h3>
-<p>Write a function called <strong>stringLastIndexOf,</strong> which accepts two strings: the first is a word and the second is a single character.</p>
-<p>The function should return the last index at which the character exists or <code>-1</code> if the character is not found.</p>
-<h4>Level 1</h4>
-<p>Examples:</p>
-<pre><code class="language-js">stringLastIndexOf(&#39;awesome&#39;, &#39;e&#39;); // 6
+    <h4>Level 2</h4>
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <p>
+      Do not use the built in
+      <code>&quot;string&quot;.indexOf()</code> function!
+    </p>
+    <hr />
+    <h3>stringLastIndexOf()</h3>
+    <p>
+      Write a function called <strong>stringLastIndexOf,</strong> which accepts
+      two strings: the first is a word and the second is a single character.
+    </p>
+    <p>
+      The function should return the last index at which the character exists or
+      <code>-1</code> if the character is not found.
+    </p>
+    <h4>Level 1</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">stringLastIndexOf(&#39;awesome&#39;, &#39;e&#39;); // 6
 stringLastIndexOf(&#39;awesome&#39;, &#39;z&#39;); // -1
 </code></pre>
-<h4>Level 2</h4>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage</p>
-<p>Do not use the built in <code>&quot;string&quot;.lastIndexOf()</code> <strong>function!</strong></p>
-<hr>
-<h3>totalCaps()</h3>
-<p>Write a function called <strong>totalCaps,</strong> which accepts an array of strings and returns the total number of capitals in each of the strings.</p>
-<h4>Level 1</h4>
-<h4>Level 2</h4>
-<p>Examples:</p>
-<pre><code class="language-js">totalCaps([&#39;AwesomE&#39;, &#39;ThIngs&#39;, &#39;hAppEning&#39;, &#39;HerE&#39;]); // 8
+    <h4>Level 2</h4>
+    <h4>Level 3</h4>
+    <p>Test for Arrow function usage</p>
+    <p>
+      Do not use the built in <code>&quot;string&quot;.lastIndexOf()</code>
+      <strong>function!</strong>
+    </p>
+    <hr />
+    <h3>totalCaps()</h3>
+    <p>
+      Write a function called <strong>totalCaps,</strong> which accepts an array
+      of strings and returns the total number of capitals in each of the
+      strings.
+    </p>
+    <h4>Level 1</h4>
+    <h4>Level 2</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">totalCaps([&#39;AwesomE&#39;, &#39;ThIngs&#39;, &#39;hAppEning&#39;, &#39;HerE&#39;]); // 8
 totalCaps([&#39;Elie&#39;, &#39;Matt&#39;, &#39;Tim&#39;]); // 3
 totalCaps([&#39;hello&#39;, &#39;world&#39;]); // 0
 </code></pre>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage
-Do <strong>not</strong> convert the array into a string.</p>
-<hr>
-<h3>twoHighest()</h3>
-<p>Write a function called <strong>twoHighest</strong> that takes an array of numbers as its argument and returns the <strong>two highest numbers within the array</strong>.</p>
-<p>The returned value should be an array in the following format: <code>[secondHighest, highest]</code></p>
-<p>The order of the numbers passed in could be any order.</p>
-<h4>Level 1</h4>
-<h4>Level 2</h4>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage
-<strong>Do not use the build in sort() method - the tests will fail!</strong></p>
-<p>Examples:</p>
-<pre><code class="language-js">twoHighest([1, 2, 10, 8]); // [8, 10]
+    <h4>Level 3</h4>
+    <p>
+      Test for Arrow function usage Do <strong>not</strong> convert the array
+      into a string.
+    </p>
+    <hr />
+    <h3>twoHighest()</h3>
+    <p>
+      Write a function called <strong>twoHighest</strong> that takes an array of
+      numbers as its argument and returns the
+      <strong>two highest numbers within the array</strong>.
+    </p>
+    <p>
+      The returned value should be an array in the following format:
+      <code>[secondHighest, highest]</code>
+    </p>
+    <p>The order of the numbers passed in could be any order.</p>
+    <h4>Level 1</h4>
+    <h4>Level 2</h4>
+    <h4>Level 3</h4>
+    <p>
+      Test for Arrow function usage
+      <strong
+        >Do not use the build in sort() method - the tests will fail!</strong
+      >
+    </p>
+    <p>Examples:</p>
+    <pre><code class="language-js">twoHighest([1, 2, 10, 8]); // [8, 10]
 twoHighest([6, 1, 9, 10, 4]); // [9,10]
 twoHighest([4, 25, 3, 20, 19, 5]); // [20,25]
 twoHighest([1, 2, 2]); // [2, 2];
 </code></pre>
-<hr>
-<h3>values()</h3>
-<p>Write a function called <strong>values,</strong> which accepts an object and returns an array of all of the values in the object.</p>
-<h4>Level 1</h4>
-<p>Examples:</p>
-<pre><code class="language-js">let obj = { a: 1, b: 2, c: 3 };
+    <hr />
+    <h3>values()</h3>
+    <p>
+      Write a function called <strong>values,</strong> which accepts an object
+      and returns an array of all of the values in the object.
+    </p>
+    <h4>Level 1</h4>
+    <p>Examples:</p>
+    <pre><code class="language-js">let obj = { a: 1, b: 2, c: 3 };
 values(obj); // [1,2,3]
 
 let obj2 = { first: &#39;Matt&#39;, last: &#39;Lane&#39;, isDogOwner: true };
 values(obj2); // [&quot;Matt&quot;, &quot;Lane&quot;, true]
 </code></pre>
-<h4>Level 2</h4>
-<pre><code class="language-js">let obj3 = {};
+    <h4>Level 2</h4>
+    <pre><code class="language-js">let obj3 = {};
 values(obj3); // []
 </code></pre>
-<h4>Level 3</h4>
-<p>Test for Arrow function usage
-Do not use the built in <code>Object.values()</code> function!</p>
+    <h4>Level 3</h4>
+    <p>
+      Test for Arrow function usage Do not use the built in
+      <code>Object.values()</code> function!
+    </p>
+  </body>
+</html>
