@@ -93,12 +93,15 @@ The character at index 999 is ''
 ## Object.entries()
 
 ### From W3S
+1. [Object.entries](https://www.w3schools.com/jsref/jsref_object_entries.asp)
 1. ![entries w3s](images/level-1/entries-obj-w3s.png)
 1. ![entries w3s examples](images/level-1/entries-obj-w3s-examples.png)
 1. ![entries w3s rel methods](images/level-1/entries-obj-relatedMethods.png)
 1. ![]()
 
 ### From MDN Object.entries()
+[Object.entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
+
 The **`Object.entries()`** static method returns an array of a given object's own enumerable string-keyed property key-value pairs.
 
 {{InteractiveExample("JavaScript Demo: Object.entries()")}}
@@ -172,12 +175,17 @@ Object.entries(obj).forEach(([key, value]) => {
 
 
 ## Array.indexOf() from W3S
+
+1. [indexOf](https://www.w3schools.com/jsref/jsref_indexof_array.asp)
 1. ![arra.indexOf](images/level-1/indexOf-arr-w3s.png)
 1. ![indexOf](images/level-1/indexOf-arr-w3s-examples.png)
 1. ![indexOf](images/level-1/indexOf-arr-description.png)
 1. ![indexOf](images/level-1/indexOf-arr-w3s-find-methods.png)
 
 ## Array.prototype.indexOf() from MDN
+
+[indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
+
 The **`indexOf()`** method of {{jsxref("Array")}} instances returns the first index at which a
 given element can be found in the array, or -1 if it is not present.
 
@@ -274,6 +282,95 @@ console.log(indices);
 ## Array.slice()
 
 ## String.includes()
+1. [string includes](https://www.w3schools.com/jsref/jsref_includes.asp)
+1. [string includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+1. [includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
+
+## String.includes() From W3S
+1. ![includes syntax](images/level-1//includes-w3s-syntax.png)
+1. ![includes examples](images/level-1/includes-w3s-examples.png)
+
+---
+title: String.prototype.includes()
+slug: Web/JavaScript/Reference/Global_Objects/String/includes
+page-type: javascript-instance-method
+browser-compat: javascript.builtins.String.includes
+---
+
+{{JSRef}}
+
+The **`includes()`** method of {{jsxref("String")}} values performs a case-sensitive search to determine whether a given string may be found within this string, returning `true` or `false` as appropriate.
+
+{{InteractiveExample("JavaScript Demo: String.prototype.includes()", "shorter")}}
+
+```js interactive-example
+const sentence = "The quick brown fox jumps over the lazy dog.";
+
+const word = "fox";
+
+console.log(
+  `The word "${word}" ${
+    sentence.includes(word) ? "is" : "is not"
+  } in the sentence`,
+);
+// Expected output: "The word "fox" is in the sentence"
+```
+
+## Syntax
+
+```js-nolint
+includes(searchString)
+includes(searchString, position)
+```
+
+### Parameters
+
+- `searchString`
+  - : A string to be searched for within `str`. Cannot [be a regex](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#special_handling_for_regexes). All values that are not regexes are [coerced to strings](/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_coercion), so omitting it or passing `undefined` causes `includes()` to search for the string `"undefined"`, which is rarely what you want.
+- `position` {{optional_inline}}
+  - : The position within the string at which to begin searching for `searchString`. (Defaults to `0`.)
+
+### Return value
+
+**`true`** if the search string is found anywhere within the given string, including when `searchString` is an empty string; otherwise, **`false`**.
+
+### Exceptions
+
+- {{jsxref("TypeError")}}
+  - : Thrown if `searchString` [is a regex](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#special_handling_for_regexes).
+
+## Description
+
+This method lets you determine whether or not a string includes another string.
+
+### Case-sensitivity
+
+The `includes()` method is case sensitive. For example, the following expression returns `false`:
+
+```js
+"Blue Whale".includes("blue"); // returns false
+```
+
+You can work around this constraint by transforming both the original string and the search string to all lowercase:
+
+```js
+"Blue Whale".toLowerCase().includes("blue"); // returns true
+```
+
+## Examples
+
+### Using includes()
+
+```js
+const str = "To be, or not to be, that is the question.";
+
+console.log(str.includes("To be")); // true
+console.log(str.includes("question")); // true
+console.log(str.includes("nonexistent")); // false
+console.log(str.includes("To be", 1)); // false
+console.log(str.includes("TO BE")); // false
+console.log(str.includes("")); // true
+```
 
 ## string.indexOf()
 
