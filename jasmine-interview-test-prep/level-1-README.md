@@ -1,6 +1,9 @@
+<style>pre {background-color:#aaa}</style>
+<main style='padding-left:5%'>
+
 # Level 1 README
 1. from [w3s](https://www.w3schools.com) simplified.
-1. from [MDN](https://developer.mozilla.org/en-US/) simplified.
+1. from [MDN](https://developer.mozilla.org/en-US/index) simplified.
 
 ## charAt()
 - [W3 Schools jsref charAt](https://www.w3schools.com/jsref/jsref_charat.asp)
@@ -15,6 +18,8 @@
 
 The **`charAt()`** method returns a new string consisting of the single UTF-16 code unit at the given index.
 
+<iframe id='charat-iframe' title='charat iframe' width='500' height='500' src="http://localhost:22022/websites/interactive-examples.mdn.mozilla.net/pages/js/JavaScript Demo_ String.charAt().html">
+</iframe>
 
 ```js interactive-example
 const sentence = "The quick brown fox jumps over the lazy dog.";
@@ -106,6 +111,9 @@ The **`Object.entries()`** static method returns an array of a given object's ow
 
 {{InteractiveExample("JavaScript Demo: Object.entries()")}}
 
+<iframe id='charat-iframe' title='charat iframe' width='500' height='500' src="http://localhost:22022/websites/interactive-examples.mdn.mozilla.net/pages/js/JavaScript Demo_ Object.entries().html">
+</iframe>
+
 ```js interactive-example
 const object1 = {
   a: "some string",
@@ -191,6 +199,9 @@ given element can be found in the array, or -1 if it is not present.
 
 {{InteractiveExample("JavaScript Demo: Array.prototype.indexOf()")}}
 
+<iframe id='charat-iframe' title='charat iframe' width='500' height='500' src="http://localhost:22022/websites/interactive-examples.mdn.mozilla.net/pages/js/JavaScript Demo_ Array.indexOf().html">
+</iframe>
+
 ```js interactive-example
 const beasts = ["ant", "bison", "camel", "duck", "bison"];
 
@@ -270,16 +281,39 @@ console.log(indices);
 
 
 ## Object.keys()
+- [W3 Schools jsref charAt](https://www.w3schools.com/jsref/jsref_object_keys.asp)
+- [MDN Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
+
+<iframe id='charat-iframe' title='charat iframe' width='500' height='500' src="http://localhost:22022/websites/interactive-examples.mdn.mozilla.net/pages/js/JavaScript Demo_ Object.keys().html">
+</iframe>
 
 ## Array.lastIndexOf()
+- [W3 Schools array lastIndexOf](https://www.w3schools.com/jsref/jsref_lastindexof_array.asp)
+- [MDN Array.lastIndexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf)
+- [MDN String.lastIndexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf)
+
+<iframe id='charat-iframe' title='charat iframe' width='500' height='500' src="http://localhost:22022/websites/interactive-examples.mdn.mozilla.net/pages/js/JavaScript Demo_ String.lastIndexOf().html">
+</iframe>
+<iframe id='charat-iframe' title='charat iframe' width='500' height='500' src="http://localhost:22022/websites/interactive-examples.mdn.mozilla.net/pages/js/JavaScript%20Demo_%20Array.lastIndexOf().html">
+</iframe>
 
 ## Math.max()
 
+<iframe id='charat-iframe' title='charat iframe' width='500' height='500' src="http://localhost:22022/websites/interactive-examples.mdn.mozilla.net/pages/js/JavaScript Demo_ Math.max().html">
+</iframe>
+
 ## Math.min()
+<iframe id='charat-iframe' title='charat iframe' width='500' height='500' src="http://localhost:22022/websites/interactive-examples.mdn.mozilla.net/pages/js/JavaScript Demo_ Math.min().html">
+</iframe>
 
 ## repeat()
 
+<iframe id='charat-iframe' title='charat iframe' width='500' height='500' src="http://localhost:22022/websites/interactive-examples.mdn.mozilla.net/pages/js/JavaScript Demo_ String.repeat().html">
+</iframe>
+
 ## Array.slice()
+<iframe id='charat-iframe' title='charat iframe' width='500' height='500' src="http://localhost:22022/websites/interactive-examples.mdn.mozilla.net/pages/js/JavaScript Demo_ Array.slice().html">
+</iframe>
 
 ## String.includes()
 1. [string includes](https://www.w3schools.com/jsref/jsref_includes.asp)
@@ -290,18 +324,13 @@ console.log(indices);
 1. ![includes syntax](images/level-1//includes-w3s-syntax.png)
 1. ![includes examples](images/level-1/includes-w3s-examples.png)
 
----
-title: String.prototype.includes()
-slug: Web/JavaScript/Reference/Global_Objects/String/includes
-page-type: javascript-instance-method
-browser-compat: javascript.builtins.String.includes
----
-
-{{JSRef}}
 
 The **`includes()`** method of {{jsxref("String")}} values performs a case-sensitive search to determine whether a given string may be found within this string, returning `true` or `false` as appropriate.
 
-{{InteractiveExample("JavaScript Demo: String.prototype.includes()", "shorter")}}
+<!-- {{InteractiveExample("JavaScript Demo: String.prototype.includes()", "shorter")}} -->
+
+<iframe id='charat-iframe' title='charat iframe' width='500' height='500' src="http://localhost:22022/websites/interactive-examples.mdn.mozilla.net/pages/js/JavaScript Demo_ String.includes().html">
+</iframe>
 
 ```js interactive-example
 const sentence = "The quick brown fox jumps over the lazy dog.";
@@ -326,7 +355,7 @@ includes(searchString, position)
 ### Parameters
 
 - `searchString`
-  - : A string to be searched for within `str`. Cannot [be a regex](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#special_handling_for_regexes). All values that are not regexes are [coerced to strings](/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_coercion), so omitting it or passing `undefined` causes `includes()` to search for the string `"undefined"`, which is rarely what you want.
+  - : A string to be searched for within `str`. Cannot [be a regex](http://localhost:22022/websites/develper.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#special_handling_for_regexes). All values that are not regexes are [coerced to strings](http://localhost:22022/websites/develper.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_coercion), so omitting it or passing `undefined` causes `includes()` to search for the string `"undefined"`, which is rarely what you want.
 - `position` {{optional_inline}}
   - : The position within the string at which to begin searching for `searchString`. (Defaults to `0`.)
 
@@ -337,7 +366,7 @@ includes(searchString, position)
 ### Exceptions
 
 - {{jsxref("TypeError")}}
-  - : Thrown if `searchString` [is a regex](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#special_handling_for_regexes).
+  - : Thrown if `searchString` [is a regex](http://localhost:22022/websites/develper.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#special_handling_for_regexes).
 
 ## Description
 
@@ -373,7 +402,125 @@ console.log(str.includes("")); // true
 ```
 
 ## string.indexOf()
+<iframe id='charat-iframe' title='charat iframe' width='500' height='500' src="http://localhost:22022/websites/interactive-examples.mdn.mozilla.net/pages/js/JavaScript Demo_ String.indexof().html">
+</iframe>
 
 ## string.lastIndexOf()
+<iframe id='charat-iframe' title='charat iframe' width='500' height='500' src="http://localhost:22022/websites/interactive-examples.mdn.mozilla.net/pages/js/JavaScript Demo_ String.lastindexof().html">
+</iframe>
 
 ## Object.values()
+<iframe id='charat-iframe' title='charat iframe' width='500' height='500' src="http://localhost:22022/websites/interactive-examples.mdn.mozilla.net/pages/js/JavaScript Demo_ Object.values().html">
+</iframe>
+
+
+## References with links
+### Arrays
+1. [array.lastindexof](https://www.w3schools.com/jsref/jsref_lastindexof_array.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_lastindexof_array.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_lastindexof_array.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_lastindexof_array.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_lastindexof_array.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_lastindexof_array.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_lastindexof_array.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_lastindexof_array.asp)
+1. [Array.filter](https://www.w3schools.com/jsref/jsref_filter.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_filter.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_filter.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_filter.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_filter.asp)
+1. [Array.forEach](https://www.w3schools.com/jsref/jsref_foreach.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_foreach.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_foreach.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_foreach.asp)
+1. [Array.map](https://www.w3schools.com/jsref/jsref_map.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_map.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_map.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_map.asp)
+1. [Array.splice](https://www.w3schools.com/jsref/jsref_splice.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_splice.asp)
+1. [Array.](https://www.w3schools.com/jsref/jsref_splice.asp)
+
+### Objects
+1. [Object.entries](https://www.w3schools.com/jsref/jsref_object_entries.asp)
+1. [Object.](https://www.w3schools.com/jsref/jsref_object_entries.asp)
+1. [Object.](https://www.w3schools.com/jsref/jsref_object_entries.asp)
+1. [Object.](https://www.w3schools.com/jsref/jsref_object_entries.asp)
+1. [Object.](https://www.w3schools.com/jsref/jsref_object_entries.asp)
+1. [Object.keys](https://www.w3schools.com/jsref/jsref_object_keys.asp)
+1. [Object.](https://www.w3schools.com/jsref/jsref_object_keys.asp)
+1. [Object.](https://www.w3schools.com/jsref/jsref_object_keys.asp)
+1. [Object.](https://www.w3schools.com/jsref/jsref_object_keys.asp)
+
+### Strings
+1. [String.charAt](https://www.w3schools.com/jsref/jsref_charat.asp)
+1. [String.](https://www.w3schools.com/jsref/jsref_charat.asp)
+1. [String.](https://www.w3schools.com/jsref/jsref_charat.asp)
+1. [String.](https://www.w3schools.com/jsref/jsref_charat.asp)
+1. [String.trim](https://www.w3schools.com/jsref/jsref_trim_string.asp)
+1. [String.](https://www.w3schools.com/jsref/jsref_trim_string.asp)
+1. [String.](https://www.w3schools.com/jsref/jsref_trim_string.asp)
+1. [String.](https://www.w3schools.com/jsref/jsref_trim_string.asp)
+1. [String.](https://www.w3schools.com/jsref/jsref_trim_string.asp)
+1. [String.includes](https://www.w3schools.com/jsref/jsref_includes.asp)
+1. [String.](https://www.w3schools.com/jsref/jsref_includes.asp)
+1. [String.](https://www.w3schools.com/jsref/jsref_includes.asp)
+1. [String.](https://www.w3schools.com/jsref/jsref_includes.asp)
+1. [String.repeat](https://www.w3schools.com/jsref/jsref_repeat.asp)
+1. [String.](https://www.w3schools.com/jsref/jsref_repeat.asp)
+1. [String.](https://www.w3schools.com/jsref/jsref_repeat.asp)
+1. [String.](https://www.w3schools.com/jsref/jsref_repeat.asp)
+
+## MDN
+
+### Array
+1. [Array.lastIndexOf](https://interactive-examples.mdn.mozilla.net/pages/js/array-lastindexof.html)
+1. [Array.](https://interactive-examples.mdn.mozilla.net/pages/js/array-lastindexof.html)
+1. [Array.](https://interactive-examples.mdn.mozilla.net/pages/js/array-lastindexof.html)
+1. [Array.](https://interactive-examples.mdn.mozilla.net/pages/js/array-lastindexof.html)
+1. [Array.](https://interactive-examples.mdn.mozilla.net/pages/js/array-lastindexof.html)
+1. [Array.](https://interactive-examples.mdn.mozilla.net/pages/js/array-lastindexof.html)
+1. [Array.](https://interactive-examples.mdn.mozilla.net/pages/js/array-lastindexof.html)
+1. [Array.](https://interactive-examples.mdn.mozilla.net/pages/js/array-lastindexof.html)
+1. [Array.](https://interactive-examples.mdn.mozilla.net/pages/js/array-lastindexof.html)
+1. [Array.](https://interactive-examples.mdn.mozilla.net/pages/js/array-lastindexof.html)
+1. [Array.](https://interactive-examples.mdn.mozilla.net/pages/js/array-lastindexof.html)
+1. [Array.indexOf](https://interactive-examples.mdn.mozilla.net/pages/js/array-indexof.html)
+
+### String
+1. [String.repeat](https://interactive-examples.mdn.mozilla.net/pages/js/string-repeat.html)
+1. [String.](https://interactive-examples.mdn.mozilla.net/pages/js/string-repeat.html)
+1. [String.](https://interactive-examples.mdn.mozilla.net/pages/js/string-repeat.html)
+1. [String.](https://interactive-examples.mdn.mozilla.net/pages/js/string-repeat.html)
+1. [String.](https://interactive-examples.mdn.mozilla.net/pages/js/string-repeat.html)
+1. [String.](https://interactive-examples.mdn.mozilla.net/pages/js/string-repeat.html)
+1. [String.](https://interactive-examples.mdn.mozilla.net/pages/js/string-repeat.html)
+1. [String.includes](https://interactive-examples.mdn.mozilla.net/pages/js/string-includes.html)
+1. [String.](https://interactive-examples.mdn.mozilla.net/pages/js/string-repeat.html)
+1. [String.charAt](https://interactive-examples.mdn.mozilla.net/pages/js/string-charat.html)
+1. [String.](https://interactive-examples.mdn.mozilla.net/pages/js/string-repeat.html)
+
+### Math
+1. [Math.min](https://interactive-examples.mdn.mozilla.net/pages/js/math-min.html)
+1. [Math.](https://interactive-examples.mdn.mozilla.net/pages/js/math-min.html)
+1. [Math.](https://interactive-examples.mdn.mozilla.net/pages/js/math-min.html)
+1. [Math.](https://interactive-examples.mdn.mozilla.net/pages/js/math-min.html)
+1. [Math.](https://interactive-examples.mdn.mozilla.net/pages/js/math-min.html)
+1. [Math.](https://interactive-examples.mdn.mozilla.net/pages/js/math-min.html)
+1. [Math.](https://interactive-examples.mdn.mozilla.net/pages/js/math-min.html)
+1. [Math.](https://interactive-examples.mdn.mozilla.net/pages/js/math-min.html)
+
+## Object
+1. [Object.entries](https://interactive-examples.mdn.mozilla.net/pages/js/object-entries.html)
+1. [Object.](https://interactive-examples.mdn.mozilla.net/pages/js/object-entries.html)
+1. [Object.](https://interactive-examples.mdn.mozilla.net/pages/js/object-entries.html)
+1. [Object.](https://interactive-examples.mdn.mozilla.net/pages/js/object-entries.html)
+1. [Object.](https://interactive-examples.mdn.mozilla.net/pages/js/object-entries.html)
+1. [Object.](https://interactive-examples.mdn.mozilla.net/pages/js/object-entries.html)
+1. [Object.](https://interactive-examples.mdn.mozilla.net/pages/js/object-entries.html)
+1. [Object.](https://interactive-examples.mdn.mozilla.net/pages/js/object-entries.html)
+1. [Object.](https://interactive-examples.mdn.mozilla.net/pages/js/object-entries.html)
+1. [Object.keys](https://interactive-examples.mdn.mozilla.net/pages/js/object-keys.html)
+1. [Object.values](https://interactive-examples.mdn.mozilla.net/pages/js/object-values.html)
+1. [Object.entries](https://interactive-examples.mdn.mozilla.net/pages/js/object-entries.html)
+</main>
