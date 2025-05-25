@@ -134,12 +134,7 @@ indexOf(arr3, 10); // -1
 Test for Arrow function usage
 Do not use the built in `Array.indexOf()` function!
 
----
 
-
-```
-
----
 
 ### keys()
 
