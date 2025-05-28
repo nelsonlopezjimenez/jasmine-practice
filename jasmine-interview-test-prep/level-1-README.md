@@ -383,4 +383,13 @@ console.log(str.includes("")); // true
 <iframe id='charat-iframe' title='charat iframe' width='650' height='500' src="http://localhost:22022/websites/interactive-examples.mdn.mozilla.net/pages/js/JavaScript Demo_ Object.values().html">
 </iframe>
 
+## string.slice()
+
+1. ![string.slice](images/level-1/slice-w3s-syntax.png)
+1. ![string.slice examples](images/level-1/slice-w3s-examples.png)
+
+<iframe id='charat-iframe' title='charat iframe' width='650' height='500' src="http://localhost:22022/websites/interactive-examples.mdn.mozilla.net/pages/js/JavaScript Demo_ String.slice().html">
+</iframe>
+
+
 </main>
