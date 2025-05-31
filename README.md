@@ -1,5 +1,11 @@
 # jasmine-interview-test-prep
 
+## 5.31.2025
+1. Added public key for localepsilon account at bitnami gitea
+```
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM3aj0/djss/Ja37M65N5BwdJjiRujKnj2OO9fLgIs1c localepsilon@cis0678
+
+```
 ## 5.20.2025
 1. committed first the version enforcing arrow function syntax.
 1. committed second the original version.
