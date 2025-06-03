@@ -3,7 +3,7 @@
 ## 6.3.2025
 1. [gallery class version](http://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Image_gallery)
 1. [image gallery MDN newer version](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Image_gallery)
-1. Grab the zip pending
+1. [Grab the zip from here or from the left side window bar](/mdn-content/gallery-start.zip)
 1. [looping with circle color game class servers](http://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)
 1. [loops newer version](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Loops)
 1. [what is JavaScript newer version](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript)
