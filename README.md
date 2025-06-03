@@ -7,7 +7,7 @@
 1. [looping with circle color game class servers](http://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)
 1. [loops newer version](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Loops)
 1. [what is JavaScript newer version](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript)
-
+1. [what is JS class version](http://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
 
 ## 5.31.2025
 1. Added public key for localepsilon account at bitnami gitea
