@@ -6,6 +6,7 @@
 1. [](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Loops)
 1. [](https://mdn.github.io/learning-area/javascript/building-blocks/gallery/)
 1. [](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript)
+1. [gallery](http://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Image_gallery)
 
 ## 5.31.2025
 1. Added public key for localepsilon account at bitnami gitea
