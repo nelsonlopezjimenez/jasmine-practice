@@ -4,8 +4,8 @@
 1. [gallery class version](http://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Image_gallery)
 1. [image gallery MDN newer version](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Image_gallery)
 1. Grab the zip pending
-1. [](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Loops)
-1. [](https://mdn.github.io/learning-area/javascript/building-blocks/gallery/)
+1. [looping with circle color game class servers](http://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)
+1. [loops newer version](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Loops)
 1. [](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript)
 
 
